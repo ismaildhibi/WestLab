@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com/3.4.17"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"forest-darkest":"#0b1d12","surface-cream":"#f6f7ef","on-primary-container":"#76907d","secondary-fixed-dim":"#aed460","secondary-container":"#c6ed77","surface-dim":"#d9dbd3","on-secondary-fixed":"#141f00","outline-variant":"#c2c8c1","surface-container-low":"#f3f4ec","on-secondary-container":"#4e6c00","lime-vibrant":"#c8ef78","surface-mint":"#edf5e6","primary":"#001006","surface-container-lowest":"#ffffff","botanical-mid":"#34764b","secondary":"#4b6700","on-surface-variant":"#424843","surface-bright":"#f9faf2","primary-container":"#102719","inverse-primary":"#b2cdb8","stroke-focus":"#6c9a65","on-tertiary-container":"#559769","outline":"#737973","on-surface":"#1a1c18","on-tertiary-fixed":"#00210d","forest-surface":"#183b27","tertiary-fixed-dim":"#91d6a3","stroke-soft":"#e3e9df","on-error-container":"#93000a","tertiary-fixed":"#acf2bd","error-container":"#ffdad6","primary-fixed":"#cee9d3","on-secondary-fixed-variant":"#374e00","secondary-fixed":"#c9f079","surface-container-high":"#e8e9e1","on-tertiary-fixed-variant":"#06522b","surface-container-highest":"#e2e3db","tertiary-container":"#002912","tertiary":"#001005","inverse-surface":"#2f312c","surface-tint":"#4c6453","on-error":"#ffffff","lime-muted":"#a5c779","surface-container":"#edefe7","surface-paper":"#ffffff","error":"#ba1a1a","forest-deep":"#102719","on-background":"#1a1c18","surface":"#f9faf2","primary-fixed-dim":"#b2cdb8","background":"#f9faf2","on-primary-fixed":"#092012","on-tertiary":"#ffffff","on-primary":"#ffffff","on-secondary":"#ffffff","ink-muted":"#68766b","surface-sage":"#eaf1e5","on-primary-fixed-variant":"#344c3c","inverse-on-surface":"#f0f1e9","ink-primary":"#18271d","surface-variant":"#e2e3db"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{gutter:"1.5rem","space-xs":"0.375rem","gutter-lg":"2.5rem",margin:"2rem","space-md":"1rem","gutter-sm":"0.75rem","space-lg":"1.5rem","margin-mobile":"1rem","space-sm":"0.625rem","space-xl":"2.5rem"},fontFamily:{"headline-lg-mobile":["DM Sans"],display:["DM Sans"],"label-lg":["DM Sans"],"headline-sm":["DM Sans"],"body-lg":["DM Sans"],"headline-md":["DM Sans"],"body-sm":["DM Sans"],"body-md":["DM Sans"],"label-md":["DM Sans"],"metric-display":["DM Sans"],"display-mobile":["DM Sans"],"headline-lg":["DM Sans"],"label-kicker":["DM Sans"]},fontSize:{"headline-lg-mobile":["30px",{lineHeight:"1.2",letterSpacing:"-1px",fontWeight:"700"}],display:["64px",{lineHeight:"1.08",letterSpacing:"-2.5px",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"1.0",letterSpacing:"0px",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"1.35",letterSpacing:"-0.2px",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"1.6",fontWeight:"500"}],"headline-md":["22px",{lineHeight:"1.3",letterSpacing:"-0.5px",fontWeight:"700"}],"body-sm":["14px",{lineHeight:"1.55",fontWeight:"500"}],"body-md":["16px",{lineHeight:"1.65",fontWeight:"500"}],"label-md":["13px",{lineHeight:"1.2",letterSpacing:"0.5px",fontWeight:"700"}],"metric-display":["36px",{lineHeight:"1.0",letterSpacing:"-1px",fontWeight:"800"}],"display-mobile":["40px",{lineHeight:"1.15",letterSpacing:"-1.5px",fontWeight:"800"}],"headline-lg":["42px",{lineHeight:"1.15",letterSpacing:"-1.5px",fontWeight:"700"}],"label-kicker":["12px",{lineHeight:"1.0",letterSpacing:"1.6px",fontWeight:"800"}]}}}}</script><style>html{scroll-behavior:smooth;scroll-padding-top:120px}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50"><div class="bg-forest-deep text-on-primary py-space-xs px-margin-mobile md:px-margin shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="max-w-[1160px] mx-auto flex items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-lime-vibrant animate-pulse"></span><span class="font-label-md text-label-md text-surface-bright" data-fr="WestLab Gafsa :" data-ar="WestLab قفصة :">WestLab Gafsa :</span><span class="hidden sm:inline text-surface-container-high" data-fr="Analyses de sol, d'eau d'irrigation et de plantes" data-ar="تحاليل التربة ومياه الري والنباتات">Analyses de sol, d'eau d'irrigation et de plantes</span></div><div class="flex items-center gap-space-md"><span class="hidden md:flex items-center gap-1 font-label-md text-label-md text-lime-muted"><span class="material-symbols-outlined text-[16px]">location_on</span><span data-fr="Gafsa, Tunisie" data-ar="قفصة، تونس">Gafsa, Tunisie</span></span><div class="flex items-center bg-forest-surface rounded-full p-0.5 text-label-kicker font-label-kicker"><button class="px-2 py-0.5 rounded-full bg-lime-vibrant text-ink-primary font-bold" type="button">FR</button><button class="px-2 py-0.5 rounded-full text-surface-bright hover:text-lime-vibrant transition-colors" type="button">AR</button></div></div></div></div><div class="bg-surface-paper/95 backdrop-blur-md shadow-[0_18px_55px_rgba(19,48,29,0.06)]"><div class="h-20 max-w-[1160px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-3 group" data-path="accueil" href="#"><img alt="WestLab - Analyses agricoles et environnementales" class="h-12 w-auto object-contain" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCADUAaQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7KooooAKKSigApaKKACkopaACkopaACikooAKKWigBKKKWgAooqO5ngtojLcTRwxjq8jBQPxNJtJXYElFcrqnxA8L2BKi+a7cfw2yF/16frXM6h8WOo0/RyfRp5f6D/GvGxPEOW4bSdVX8tfyuQ6kV1PUKMV4ZqXxJ8U3GRDPb2intDCM/m2a5fVvEev3xIu9ZvpF/u+cQv5DivGrcb4OOlKEpfcv6+4yliEuh9FaprmjaWpbUdUs7XHaSUA/l1rh/EXxi8O2CsmlwXGqTDgFR5cf/fTc/kK8JuWy5duT3J61l3ErM4S3BdycALzk+leZV4uxdfSjBR/F/wCX4HHUxsumh7t8OPEPiH4geKHub9za6TpuJDbwArG8h+4rHq2MbvTgcc167XMfDHw4PDHg6z0+RR9rceddkd5W6j8OB+FdPX2uV0KtHDp1m3N6u/ft8juoRlGF5bsKSlpK9E2CilooAKSiloAKKSloASilpKAFooooASiiloASlpKWgAooooAKKSloASloooAKSlpKAClpKWgBKKWigAopKKAFooooAKKSloAKKKKAEooooAWikooAKWiqmr6lYaTp8uoandRWtrEMvJI2AP8AE+1KUlFXewN21ZbrA8UeMNA8ODbqN8v2jGRbxfPIfwHT8cV4948+Md/qUklj4Z32Fn0Nyw/fSD2/uD9fpXnAu3eRpZZGd2OWZjkk+pNfH5pxVGjeGEXM+72+Xc4amNW0D13Xvizqt4zRaRbR2EJ4Ej4eU/0H5GuLvtTvdRmMuoXs90/rK5bH09K5tbsDvTxd/wC1XwOOx2MxzvXm35dPu2MHXb3Zuo6joRTjIMdKxrq7SwtRdX8qWsLDKtMdu/8A3QeW/DNc9deOISSmnWckx7SS/Kv5df5VxRy6vPVRdvuB4mMdztJWJHFY2o6nawEr5oeT+6pyf/rVydxq2qah/r5yqH+CMbVpsSYFdlPL+T439xy1MTzfCjSur+S44+4noK9A/Z88NnXPGY1GePdY6WBMxI4aU/cX8OW/4CK8yAyQACxPQDvX118I/DI8LeCbSylQLeTj7Rd+vmMB8v8AwEYH4V9Rw9l6xGJTa92Ovz6f15FYSm6tW72R11JS0V+kHuhSClooAKKKSgBaKSigBaKKKAEooooAKKWkoAWkopaACkpaKAEpaSloAKKKKACikpaACikpaAEpaSloASilooAKK4bxt8VPB/hWV7S41Bb3UF62lqwd1P8AtHOF/E59q8n8RfHHXtRdotK+y6TCeAVxJLj3ZuPyFeVjc5wuD0m7vstf+Ac9TFUqejep9HyOkaF5HVFHUscCse88WeGbRilxr2nIw/hE6kj8BXy1d6/eanLv1LV5btz/AM9rgt+hPFPiaNx8joT7MDXy+J40nF2pUfvf+X+Zh9cv8KPpQ/EHwYpwfEFqD9G/wq1ZeMvCl4wW38RaazHsbhVP5HFfLlymOTkGsu7cLmsqXGOJk9acfxM3jproj7SikjljEkUiSIejK2Qfxp9fEdhr+r6PcefpWqXdi47wylQfqOh/GvSPBn7QWp2M0dr4qs11G14BurdQkyj1K/db8MV9Bg+I6Fd2qRcX96/r5GlPMIN2krH0nRWV4V8R6J4o0pNT0LUIr22bglD8yN/dZeqn2Na1fQxkpK6d0dyaaugooqrq1/Z6VplzqWoXCW9pbRtLNI54VQMk0N21Y27FDxl4l0rwnoU2r6vOI4U4RB9+V+yKO5P/ANevlH4geP8AV/GuqfaL5vJs42P2a0RvkiHqf7zep/LArL+KnxDvPHviV72QvDp8BKWNsT/q0/vH/bbqfy7Vy8Vx718PnOYzxTdKGkF+J4eKxbqvljsbiTgd6lW5PQck9Kn8CeFNe8Z6mLLRbUyKpHnXD/LFCPVm/oOTXc+Ldf8AAvwVjNhpcUPinxyF5eUZhsmx1IH3T/sj5j3IFeVhcnqYlc792Pd/p3MYQco8zdl3M2HwtLp+ijX/ABhqMPhnSD9yS7BM85/uxQj5mP5Vxet/Ei1Rms/A2jm0Qcf2pqSrNdP7on+ri/Jm9xXG6/q/iHxprr614m1Ga/vH4UucJGv91FHCr7CtHTdLAwdtdko4TBK1KN33er+XRf1qTKp0hp59f+AVkt73ULxr3Ubq4vLmQ5eWeQu7fia3LLTwuCRWhZWIUDK1oLEqjpXi4nHSqMhQ7lBLcKOlIwxV2QDFVXV3kVI1LuxCqqjJJPQCuaMnJjasd98AvC3/AAkXjVLy5j3WOl4nlyOGkz+7X8xn/gNfUprkvhN4UXwj4OtrGRV+2zfv7xh3kYfd+ijA/Cutr9QybA/U8Mov4nq/8vke5hKPsqdnuwopKK9U6gopaKACikpaAEpaKKAEopaSgBaKKSgBaKSigBaKSloAKSiigBaKSloASiiigApaKKAEpaSloAKKSigBaKSigDMvvD2gX0bR3uiabcK33hJao2fzFeZeOvgP4d1GCW58Mf8AEnvsErEWLW7n0IOSn1HHtXsNFc1fCUcRHlqRTMqlGFRWkj4T1zRNU8PavNpetWj2t5EfmRuQR2ZT0IPYio4VB6da+u/i34AsPHWhGJgkGqWwLWV1j7p/uN6oe/p1FfIt3bXukarcabqVu9tdW0hjljfqrD+nv3FfB5tlc8HO61i9n+h4uIw7oS8jQtr/AFuzUCz1G4jUf8s925D9VbIP5Vp2fiqxJ8vxV4Ts76I/8vGnk2k6++F+RvxUVn2M6MBnFXZLWG5jOFFeJHGzou0ldeev5kx5raM2l8E6H4ygeX4d+JIrm8Vdz6TqWIblR/sn7rfXp715l4n03VNA1F9N1ixnsbteTHMuDj1HYj3HFaWo6dLZXK3VjLJBcRndHLExVlPqCORXe+F/iXpHimxj8G/GG1ju7dzstNbA2y27HgF2HT/fH/AgRzXvYT6ri1aPuS/B/wCX5Bywm7P3X+H/AADy7wX421zwTrqavoV2YnBAmhY5juE/uuvce/Udq+2PhZ470j4g+FYta0tvLkB8u7tmOXt5ccqfUdwe4r41+Nnwz1j4dX8czSHUdCu2/wBC1GMfK2eQj44DY/A9R3AqfAL4iXHgH4h2t5LKRpF8y22pRk8eWTxJ9UJz9MjvXv4CdTCT9lU2NcNXlhqnJPY/QGvmn9sHx66T23gTT5sJtW61IqeveOM/+hH/AIDX0Xqmo2mm6PdarcyqLW2ge4kfPGxVLE/kK/OXxZ4ku/E3ibUdevifPvrh5iD/AAgn5V+gGB+Fd+a1XGlyR6/kdmYVeSHKupIs3cGvUPgh8MdT+IN79rnMtloMD7ZrrHMrDrHHnqfU9B9eKxPgF8Nb74i+I8zb4NCsmDX1wOC3cRIf7x9ew59M+w/tHfFCz8C6LH8OPAflWeoeQI55LfgWEJHCrj/low79QDnqRXj4XL4Ne2rfCvxPPoUY8vtanwr8TJ+Nnxb0zwLpzfDf4Wxw21xCDHe30PItz/Eqn+KX1Y/d+vT520+yeSVppi8kjsWd3OWYnqSe5pmm2fO4jJPJJ5Jrdtp7G2x5kyk+i8muXHY6VT3YrRbJGVWrKq7vboi9plgMDiuksbUKBxXOwa9bRf6m1d/94gf41bj8R3LgbLaFPrk183Xp159BRcVudOIwBxUUpCDJIA96wTrF9IMGRU/3VAqJp5JDl3Zj6k1yLCzXxMp1F0NSW5QkhTmvVP2dfBjavrX/AAk+oQZsbB8WwYcSz+v0Xr9cehrgPhr4R1Hxp4ij0603R26Ye7uMZWGP1/3j0A9fYGvsDQ9LstF0i20rTYRDa2yBI1H8z6k9SfU19Tw/lPtairzXux283/wDqwVB1Jc8tkWJXmU5SEOPZ8H9aqyapDCcXUNxbj+86ZX8xkVfpCAVwQCD1Ffa1IVXrTlZ+auv0f4nuxlH7SIra6trkZt545f91s1NWRqOg2dzmSDNrN2ePgZ+lYd5qmveHXUXsYvLUnAkJ/8AZux+tedVzKrhP96p+7/NHVfNbr8Tphho1v4Utez0f+TOzorI0LxDpmsDZbzbJwMtDJww+nr+Fa9enRr068FOnK6fY5p05U3yyVmJS0lLWpAlLSUtABSUUtACUUUtABSUtFACUtFFACUtJRQAtJRRQAtJRS0AJS0UlABS0UlABS0UUAFFFFABRRRQACvKfj18L18Y2H9s6MiR6/apgDO0XSD+Bj/eH8J/A8dPVaWsa9CFem6c1dMipTjUjyyPz5nuL+wupLa4WW2nhcpJFIuGRh1BB6GpF1/UlGI7kr/wEf4V9cfF/wCEOhePEa/iK6brqphLxFysuOiyr/EPfqPfpXyd8QfA3i7wPdGPX9Jljt84S8hBkt3+jjp9Dg+1fGYzJZUZX5bx72PCrYapRfddypNr2pHJedZPZoxWPf6mJwftEC890/wNVHucjrxVOeYN0rmo4WEXojmcrnuXwF+I2m39m3ws8dBL3w7qQ8izlnb/AI9nP3YyTyFJ+6f4Wx2PHlHxt+Hup/DfxpPot1I1xZSgzWFztx50JOOf9pehHrz0Irk5mG7IJz9a+mopf+F7/s3XNvMwm8YeFfmRh9+bauR/38QEH/bTNfR4f99T5Jbrb/I6Ifv4cj+Jbf5FrXviA95+xZZ3MszC+uhHokh3fMSj4b840/WvnXwN4d1Xxl4rsfDmjIHuryTbuI+WNByzt7KMk1bfWJl+C+neH5Gwg8Q3N1tPp9nhUfqzV9O/se+ArXw34Kn8eaoixXuqxExPJx5FovOfbcRuJ9AtauH1mrFPZItJ4qrGPRJXOh8fa7oXwC+D1tpeiRI2oOpg0+NgN085GXnk9QPvH/gK+lfFd1qM11fT399PJeXtzI0s0rtlndjksx9zXT/HPx/c/Eb4hXmrI7jTYCbbTYz/AAwqfvY9WPzH6gdq4+3gA6iubHVlUfKvhWxGKre0lyx2WxYE9xMMFyqn+EcCrVumMcVHFH0q3EuK8iclsjmLVuoq9DgVShOK1dF0zUtXvUstKsbm+uX+7FBGXb8h0HvXFNOTsg3YqNxXYfDfwPrnjjVBbabEY7SNh9pvJAfLiH/szeij9BzXo3w1/Z/vZmiv/Gs4toeGGnwPmRvZ3HC/Rcn3FfQmj6Zp+j6dFp2l2cNnaQjEcUS7VH/1/evWwOQzqvnr6R7dX/kehh8BKbvU0RneB/Cuk+D9Cj0nSYcKPmllbl5n7sx9fbtW7SUV9fCEacVGKskezGKirIKKWiqGFMmjjmiaKVFkRhhlYZBFOpaTSaswPNfGvhKfT92q6L5nlJ87RKTvi91PUj9RTvBPxBWSSPTtdkCsx2xXZ4B9A/p9fz9a9IryP4teEPse/XNMj22hObmFRxGT/EP9k9/SvlcdgauWTeLwXw/aj09f626aHr4evDFL2Nffoz1z6UV5L8JPHDLNH4e1aUmM4W0nc8g9oyfT0P4eletGvey/H08dRVWn812Z5+Jw88PPkkJS0lFdpgFFFLQAlFFFABRS0lAC0lLSUAFLSUtACUtFFACUUtFACUtFFABSUUUALRRSUAFFLRQAlLRRQAUlLRQAUyaKOaJoZo0ljcYZHUEMPQg9afSUAebeKvgb8M/EMjTT+HUsZ2OTLp8jW5z/ALq/L+lcFq37KXhW4YnTvE+tWY9JUjlH8lr6HorCWGoyd3FGEsLRlvE+SfEH7JWtJGzaF4wsbogcJd2rQ5/4Epb+VUv2dtE8V/Cr47W/h3xNp01lDrttLbLL9+CdkBkQo44JG0jHUbuRX2HXmfibUV1n4n6DpKFJIrS7MyjGcNGpLN7f3fpn1rzsbOhgnTaWspJJev8Akjnlg6dOSnDRpny3rXw/n1L9pG5+HcMbLp8mrvKAnSK2cCViPpHgfgK9x/a+8ZxeD/hzaeDNEK29zq6fZ9kfHkWaABgPTPCD23V0nhHQrd/2hfHfjO4iVI7G1tbGKQ9mMCPKfwUIPxNfJ37QviqXxb8V9UvndvItyLW3QnIRV7fmTSqzWHi4x3k39yMnBYehUmursvx/S/4HDwBQOKuR8deK9a+Ef7PXi3xdFDqesN/YGkSAMjzx5uJl9Vj4wPdsewNfSngn4H/Dvwskbx6KmqXac/adRxM2fUKRsH4CuWGX1a2uyOSjgqlRX2R8Z+GvC/iXxA4TRNC1HUD/AHoLdmUfVsYH4mvUfC/7O3j/AFPa+prYaNEeT583mSY/3UyPzIr7ChjjhiWKJFjjUYVVUAAewp1dcMmor423+B3Qy2C+J3PEvCX7OHhTTdsmvaje61IOTGP3EX5KSx/76r1vw/oGieHrIWeh6XaafAOqwRBc+5PUn3NaVFejRwtGj/DikdlOjTp/CrC0UUVuaiUtJRQAUtFFABRRR0oAKZPFFPC8MyLJFIpV1YZDA8EGnUtDV9GB82fEbQJPDfiSWyQN9lcebbP6oT0z6g8V698JPFf/AAkWhfZrqUNqNkAkxPWRf4X/AEwfce9R/GrQxq3hCS8iXNzp+Z1wOSn8Y/Ln/gNeLfDrxAfDvi20vyzeQ7eTcAdDGxwT+HB/Cvh7vJsysv4c/wAn/k/wPft9ewt/tL+vxPqKikBBAIIIPTFFfcHgBRS0UAJRS0lABRRRQAUUtFACUtJRQAUtJRQAtJS0UAFJS0UAFFJS0AFFFFABRRzRQAUUUlABS0UlAC0lLSUALRRRQBR16+Gm6Nd3xxmKMlc/3ug/XFeQfCYtqfxXvbl3LCxsGH/AnYZP15Ndx8Yb37N4aitw2Dc3Cqf91QWP6gVwn7Nzi48Q+JrrqdsYz9Xf/Cvj8dW+sZ9RodIK/wA3d/kkctWV6sYm54+v4PDfgPXb1d3naxqNxK5zyUX5SfpsiUfjXlf7JvwktNWjHxK8V2iXDzTtJplrKMrncczsD1OchQfTPpjr/wBoVpH0210CHk/YMSHuDK2GP1wDXr/gXTo9J8G6Rp0SBFhtI12gYwdoJ/U16OFmsRmNVPaCS/r5t/cd9fCr2NJy8383/lb8Taooor3zIMUV8T/Fm48T+FfiHrOjr4g1pYY7gyQZvZceU/zJj5uwOPwr3X9lHxVc6/4GutM1C8lur7TLkjfLIXdopPmXJPJ53j8BXmYfMo1q7ouNmr/gclLFqdT2bVmex0Udq+O/2nvH2sT/ABTutN0bWb6ztdKiW1K21w8atL95yQpGSCwX/gNdWKxMcPDmauaV66ox5mfYlFeE/sfeMbzX/C2qaJq17PdXunXIljeeUu7QyD1POAyt+Yr3atKFVVqamupdKoqkFJBRXxf+1z4+1mT4svo+jazf2NrpFqkDi1unjDzP87k7SMkAqPwNey/seWOqj4XSa9rGo6hfT6tdvJC11cPLthT5FxuJwCwc+/FZwxKnVdNLYxhilOq6aW3U9ror4F/aP8TeJrT43eKLW18RavbW0V0ojhhvpERR5ScABsCuO0PU/iTr0ksWh6j4u1NoQDKLS4uJSgPTdtJxnB/Ks3jEpONjCWYJScVHY/SujFfnSdN+NSnm0+IH5XdbngCL422PjfRbsQeOY0W+hEpnjuWjMZcBw4bgrjOc01i7v4WNY+7tyM++qKyvFuv6b4X8N3/iDV5vJsrGEyysBkkDooHck4AHqRXwn8Uvj74+8Y3862+pz6FpG4iGysZTG23t5kgwzH15A9q2q140t9zor4mFHfc+/Z0imieCUKySKVZT3BGCK8ok+CNizME8QXSKT8o+zqcD86+PNN+H3xW12xTWbLw34luoJF3pPtcFx6rkgsPcVc0H4l/Fb4daqLIaxq9pLCfn0/VFeRCPQpJyB7rj615uKp4fFWeIp3ttv/wCaOcVKGyaTP0G0Ozk0/R7SwluWunt4ViMzLgvtGMketXK8Y+L+seOb/8AZp/tW10+70/xLfQWzT2+mb2liDuu8Lj5h8p57jJGe9fI4T4vPwF8e8e13XfKsqVopaCr4zkl8Ld9T9H8UV+ZmpeIPHmm3ZtNS17xPZXKgFobi8njcA9DhiDTtL134gapO0Glax4q1CVV3MlrdXErKOmSFJIFZ/XFe3Kc/wDaSvblZ+mOKMV+cIX4wIyvt8e8HIx9rr7t+C93rl78KfDt34l+0nVnslNz9oQrKWBIBYHncQBnNbUq3tHa1jpoYn2za5bHY0lfmhqPjXxkNSuiPFuvDEzgAajNgDcf9qvsX9jHUtR1X4PPdapqF3fXH9qTr5tzM0r4ATAyxJx7VNLEKpLlsRQxirT5Uj2qilpK6TtFpKKWgAoNfLP7afxM1TTNV07wX4d1a6sJI4/teoy2sxjc7uI4yykEDGWI91ry34B/FvxB4e+J2mTa/wCItSvNGvH+yXkd1dPKiK/CyYYnBVsHPpmuaWJjGfKcU8dCFX2b+8++KSl980V0naFGK80/agvLyw+BviK7sLu4tLiNIdk1vIY3XM0YOGHI44r4Rbxr4yAz/wAJdr//AIMpv/iq562IVKVmjjxGMVCSi1c/TnFH4V+dlvY/HCaBJ4Lf4gyQyIHSRDdlWUjIIPcYqpYfEn4oeFNSMI8V+IbW6hb57e8nd8H0aOXI/MVm8WlvFmTzFLeLP0dpa8J/Zn+OcnxDkk8O+JIILXX4YzLFJCNsd2g+8Qv8LjqR0I5GMEV7tXTCamro7adSNSPNESiloqzQKKKSgBaSlpKAFpKKKAFoopKAPKfj/clG0e3zxiV8f98iub/ZWlH9qeIYj1MUL/8Ajz/41p/tIM0d/orjgNFMP1WuT/ZivRb/ABBvrJj/AMfNk4X3KOp/lmvg1Ll4jlJ90v8AyWx5s5f7Sv66HQfGpGn8ayRH/nhCo/z+Ne5RKEiRB0VQPyrx/wCMtsY/FkFwAMSW6Nn/AHWIr1+FhJCjjkMoI/GvZyhWx2LT3uv1Ppca74ej6f5DqWiivozzD5s/bL8PFJtG8VQIcODY3JA7jLxk/wDj4/AVw/7K3iE6L8VYLKWTbb6vC1ow7b/vRn8wR/wKvpn40+HP+Ep+GetaVGm658gz23r5sfzKB9cY/GvhCwv7nTtRtdQtJPLuLWZJ4m9GVgw/UV81j4PDYyNZddf8zx8UnRrqa6n6I+I9VttE0C/1i6YLDZW7zvnuFUnH44xX5063qFxqmqXWpXp3XN3M80rerMxJ/U19U/tOeO7W4+CulJp83PifynXaeRCoEj/rtX8TXk37Nnw+i8b6trz6jGHsrbTZIEZhwLiYFUb6qAzfXFb5g3iK8KMP6/pFYxutVjTiZv7MXiZ/Dnxe0xZJdlnqYNhPk8ZfGw/99hfzNfb+q31tpel3epXbhLe1heeVj2VVLE/kK/Na7F5pepyQgvBeWU5QjoUkRsfoRX1l8c/iNHe/sz2WqWsix3XiaGK22g8rkZnH4bWX8a0y6v7OlOMumoYOvyU5J9NT5M1i51Dxl4zubshpb/Wb8sq9y8r/ACr+oFfo94Q0W38OeFtL0C0UCDT7WO3XAxnaoBP4nJ/Gvin9kjwx/wAJB8Y7O8li32ujxNfSHtvHyxj/AL6bP/Aa+666cuh7rm+ppl0Pdc31Pzv/AGmRn48eLM/8/a/+ikr1z9gI/wDE18XAAZ8i1/8AQpa8l/aZH/F9/Fnr9rX/ANFJXM+C/GvizwbLdN4V1i40yS7CicworGQLnbncD0yfzrnjUUK7k+7OCNVU8S5Po2fppmjNfnkPjd8XQcHxnqefTyo//iK+gf2OPG/jTxjeeJR4p1i71OK2S3MBmjVRGzGTcAQo6gD8q76eKjUkopM9SljoVZqCT1Oh/bS+1j4HXX2UMU+323n4/ubj19t22viLw7d2mn+IdOv9QthdWtrdxTTQEZ8xFcFl/EAiv018VaHp3iXw7f6DqsXnWV9C0Mq5wQD3B7EHBB9QK+A/jJ8HfFXw41GVrq2l1DRSx8jVIUzGV7CQD7jex4PYmsMZTlzKaOXMKUuZVFsfeXgnxZ4e8ZaHFq/hrUoL60cDPlt80Z/uuvVWHoaf4p8KeHPFEUEfiDRrPURbyrLCZo8tGynIw3UDI5HQ9DX5q+HPEeu+GtQW/wDD2rXemXS/8tbaQqSPQ9mHscivpT4R/tUSiWHTPiNaIYzhRqtpHgj3ljHb3X/vmtaeKjNWmbUcfTqLlqK35H1h9KKr6de2epWEF/YXMV1aXEYkhmiYMjqRkEEdRViuw9E+Df2zSf8Ahe+ojPH2K1/9ArpP2DcD4l63gc/2Of8A0dHXN/tmD/i/Go/9eVr/AOi66P8AYO4+Jutj/qDn/wBHR15kf94+Z4cf99+Z9n0jdD9KWkPQ16Z7h+WOqf8AISu/+u7/APoRr7Z/Yd/5Io//AGFrj/0GOvifU/8AkJXX/Xd//QjX2z+w9/yRR/8AsLXH8o68zCfxDwsv/jM90opaSvTPdFqj4g1Wy0LQr7WtRlEVnZW7zzOeyqCT+PFXq+cP24/Gzab4UsfBNlKBcas3n3gB5Fuh4H/AnA/74NRUnyRcjKtVVKDkz5c1u+1n4i/Eia7EbTapr2ohYos8BnYKiewUYH0FYmr6ddaVql3pl/E0N1aTPBNGf4XUkEfmK99/Ye8Gf2v43vfGF2ga00aPyrfI4NzICMj/AHUz/wB9CoP21/BDaL4/g8WWkeLHXExNgcLcoAG/76XafqGry3Sbp+0Z4UsPJ0fbPufQn7L/AI5/4Tj4VWMlzNv1PS/9BvcnligGxz/vLg/XNep18H/sh+OP+ES+KcOl3UuzTdeAs5cnhZs/um/76JX/AIHX3hXoYepzwPYwdb2tJPqjy39q/wD5IF4m/wByD/0fHX58yD922Rng1+g37V3/ACQLxN/uQf8Ao+Ovz6YDpjNcmM+Neh52ZfxV6H6feBf+RJ0EdB/Ztv8A+ilr5n/b5tdJjuvC95HFENXlWdJWGN7QDbt3ewYnH1NeR2vxx+LFvYw2Nr4suooYYlijVbWH5VAwBnZnoK4bxFrur+I9Vk1PXNTutRvnwHmnkLtgdhnoB6DAp1sTGcOVIrEY2FSlyJHd/suW99c/Hrwx9i35imkll29BEIn3Z9sHH4iv0Lr5h/Y91b4R6czafpF1eReLb1Ak0mqosbTDr5cBUlduedudxxznHH09XRhY8sNzswEFClvcSilorpO0KKSloASilpKAFooooASlpKKAPIf2nIGGi6NfAcR3LxMf95cj/wBArx74TaoukfFLSLt22xvc+S59FkBT+bCvoP4+aYdR+GOpMilpLMpdLj/ZPzf+Olq+SZLhklEqMVZSCrDqCOhr4PO4Sw+Zquutn93/AAx5GMbhWUvRn1n8Y7DzbawvgudjtEx9iMj+RrqvB119s8MWE2csIQjfVflP8qxLG8j8bfC+11GLBkurVZcDtKv3l/76DCmfC67/ANDuNObjY3mx59Dwf1x+dexCaoZspL4a0dPVf8D8z6hSVfApr7L/AAZ2lAoor6Q84K+Bfjn4bHhT4nazpccXl2zTm5th28qT5gB9Mlf+A199V81ftt+Gy1roni23iyY2awumA/hOXjJ/EOPxFebmlH2lHmW6OLH0+alddD511nxDf6npGkaXdyZtdJgeG1HoryFzn8Tj6AV9h/sn+GjoPwjtLuVcXOsStfSEjnYfljH/AHyoP/Aq+NvCuk3HiHxRpmhWilpb+6jtxj+EM2CfwGT+Ffo7p1nBp+n21haII7e2iWGJB0VVAAH5CuTKablJ1H6HLl0OaTm+h8R/taeG4/Dnxbu7mGPy7fWYxfRkDjeflkH/AH0M/wDAq8x1HxFqd94a0zw9cy77HTJZ5bZe6mUqW/Vf1NfWv7bPhpdR+HVn4kjjzNo10BIcf8sZcKf/AB4J+tfGttDcXl7BZWiF7i4lWKJR/EzEAD8yKjFUnTrSS6nNjIOnVaXU+yf2I/C40v4eXviSaMrPrN0RGSP+WMWVH5sX/Svfs1jeCNCh8M+D9I8P24XZp9pHBkfxMqjc34nJ/Gtmvcow9nBRPbo0/Z01E/PH9pj/AJLv4s/6+1/9FJXrH7AyQyap4v8AMiRyIbXlhn+KWvJv2ms/8L28WEdPta/+ikrW/Zt+LGk/Cy61ufU9LvdQ/tGOFEFsyjZsLk53Eddw/KvMg1GvzPuzxKc4wxTlJ6XZ95/Zbb/n3h/74FSRokYxGioPRRivm/8A4a68LH/mUtc/7+xf406L9rnwiZUWXwrrqRlgGcPE20dzjdzXofWKXc9f63Q/mPpCmTwxTwvBPEksTqVdHUMrA9QQeoryr9pvxxdeFPg3dalo/wBoF3qey1triJSDAJASZCR90hQcH1Irw34XftTa9o1rFp/jfTzrkCAKt5AwS5A/2wflf6/KfXNOdeEJcsgqYqnTnySPVvih+zR4J8SRzXvhtB4b1RssBAubWRv9qP8Ah+qY+hr4x8Y+G9Y8JeJr7w9rlsLe+spNkig5VhjKsp7qQQQfQ19mT/tUfDOPT2uIoddln25FuLNQxPpktt/Wvkb4t+NLnx/491LxTd2y2guiqxQBs+VGihVBPc4GSfUmuPE+yavDc87G+wa5qe/kfRf7Bviu8ubLXPB11O81vZhLyzDHPlByVdR7Z2nHqT619SV80/sMeCr7StA1Txlf27wLqwSCxDjBeFCS0mPRmIA9due4r6Wrsw9/Zq56OD5vYx5j4O/bL/5LxqP/AF5Wv/oFdD+wd/yU7W/+wOf/AEdHXP8A7Zg/4vvqH/Xla/8AoFdD+wd/yU3W/wDsDn/0dHXFH/efmeXH/ffmfZ9I33T9KWkb7p+leme6fllqfGpXX/Xd/wD0I19s/sO/8kUf/sLXH8kr4m1X/kJXRznM7/8AoRr3z9nz48+H/ht4APh3UtE1S9nN7LceZbmMJhguB8zA5+WvKw81Gd2fP4KpGnVbk7H2lRXzh/w1z4Q/6FXXv++of/iq2fBP7TfhPxP4t0vw5FoGtWs2pXC28Usnlsiu3TOGzjNegq9NuyZ7CxdFuyke5XE0VvbyXE8ixxRIXd2OAqgZJPtivzd+M3jKXx18R9X8ROzG1ll8uzU/wW6cIPxHzH3Y19c/th+Nz4Y+GD6NZziPUdeY2y4PzLABmVvxBC/8Dr5n/Zg8EQ+OfixZQXtt5+maYPt16rLlHCn5EPYhnxkdwDXNiZOclTRxY6bqVI0YlLwB8aPG/gTw6uh+GbnTray81pjvs0d2dsZJY9egH0ApnxE+Mvjbx7oK6L4ku9PntFmWdRHaIjq65AIYcjgkfjX3t/whPgzp/wAIjoGP+wdD/wDE0n/CE+CzyfCHh/8A8FsP/wATT+rVLW5tCvqVbl5faaH5lxvJHIssTtG6MGR1OCpHIIr9Hvgf4zj8e/DPSdf3qbsx+ReqP4Z04f8APhh7MK+Lf2mfBQ8FfFfUra3hWHTL/wD06xVVwqo5O5B7K4YY9MV3n7DvjX+yvGV94OvJgtrrCedahjwLiMcgf7yZ/wC+BWOHk6dTlZzYOboVnTl10Pev2r/+SBeJv9yD/wBHx1+fMuNjfQ1+gv7WHPwB8Tbefkg/9Hx1+fRBZSDTxnxr0HmX8Veh+nPga1tT4K0Im3hJ/s2352D/AJ5LXn37Svwz8OeJfhzrOrppdpba1ptpJd295FGEdvLBYoxH3lIBHPQ4IrkfDn7UXw/0zw3plhNpniFprW0igfZbxkFlQKcfvOnFcN8b/wBpWLxb4Uu/DXhbSLuwt79PKuru7ZRIYz1RVUkDPQknoTx3ronWpOFm7nZVxNB0mm7nzlDI8Esc8bvHJGwdGVsMrA5BB7EV+jfwG8VXPjT4TaDr962+8mgMVy2PvyRsUZvx25/GvzmsrW7vb2GzsraW6uZ5BHDDEpZ5GJwFAHUmv0f+CfhSXwX8LtD8O3W0Xdvb77kKcgSuxdxnvgsR+FYYK/M+xy5Ypcz7HZ0Un40V6J7IUUtFABSUtFABSUtFABRSUtAEGoWsN9Y3FlcLuhuImikU91YYP6GvhLxRp1xofiC/0a6z5tlcPCxPfB4P4jB/GvvSvmX9rrwq9lrNn4vtIj5F6otrsr0WVR8jH/eUY/4D714OfYT21FVFvH8mcGYU+aCkuhq/sm+Lwz33g67k5ObuyyfoJEH6N/31Xpt5A+heKluolxBI28Af3T94fh/hXxn4a1290DXrLWdPfZdWcoljOeDjqD7EZB9jX21ouqad488FWet6YykTpvRSeY5Bw0Z9wcj8jXlU4yxeDUIfxKT5o/5f15HVkmMUf3c9np8v+AdSjK6B1IKsMgjuKWsHwpfFojYTHEkf3M9cdx+Fb1fUYHFxxlCNWPXfyfVHVXpOlNwYVz/xC8K6f418I3vhvUpJYre7C/vYsb42VgysuQRkEVb8W6uNC8N3+reUZnt4iYoh1lkPCIPdmKj8a4qTxn4ii+E2t6lOlhD4p0V3tbqPaTAJwy7WxnOxkdWHPetqk4K8ZdjmnKOsZdjJ+G3wC8N+CPF9t4ktdW1G+ubZHEUdwsewMyld3AByAT+dewVwWjeObjVNR8N2awJbXNxdXVnq9o4y9tPDCXKA+mQCD3Ug96bpnjW/ufibNpUsUC6BM8thYzgHfJewKrzKT02kMyj3iaopOlTjaCsmzOm6dNWgranVeLtCsvE/hjUvD+o7vsuoW7wSFcblDD7wz3BwR7ivH/BH7NHhXwx4q0zxAuu6rfyafOJ44Z0jCO6/dJwueDg/hXf6TrfiTXNE8WrpjWMOqafqtzZacZYiY28sIUDjPOSSCRjrntWPpnxA17xDYX2o+HdEcrpGlyvfWs8Z8x9SCnFmvuhUliM53IB1pzVOTTktegqipTalJXfQ9OoryCx8c643w18TeJ7LxbomuyWGmtPHEmntbzWVyFJMcsRcnb0wGw3B61aTxhraeBNZ1vSfE+meLLq1SEbLPS2X7LuYB5GRZGaTahZtowTs96v2qL9tH9TL+Jv7OnhPxx4uuvE0uq6rpt3ebTcJblGR2ChdwDAkHAGa5j/hkXwjn/ka9d/74h/+Jr2b4a6tNrOjS3beKdK8S25lxBd2MHkkDA3JIm5gGBzxwcYyKxfiR471Dw54n061srWGXTLREu/EEzgk29tJKIYyuOh3FnOf4Y2rOVOlbmaMp0aFueUdzzM/sjeEu3ivXh/wCH/4mpLf9knwckqNL4m12RAwLriIbh3GdvGa9R17XvEGp+N7jwp4avbHTItOsorzUdRuIPPK+aXEccablGcIzFmOAMcVl+LPFevaJ4X0aS48UeG1nvNbWwl1WOHdbJCUdgzIZMK/yjI34/Ok6dJfZJdDDq/uHo0lhZTab/Zs9tFPZmIRNDKodGQDGCD1GPWvGvGn7Mnw4164e505L7w/MxyVspAYc/8AXNwQPopArXs/H+vyeFY9Q8zTbvHii20iLUIIWW3vraSWNWljUscH52XIJXKkjIrWstV8Z+KtU1p9A1HS9G0vS72SwgNxZNcyXc0eBIzYdQkYbKgDJOCcjpVycJ6NXNJulVVmrnjsn7IFibgFPHd0sWeVOnKW/PfXaeBv2ZPh34fvI77UxeeIbmIhlW9YCAH18tQA30YkV2Vzq/i7WPFU3hjRr3S9LfTLGCbVb57ZrgGeUMVihQsuFwpYsxJwVGOprKm8e+ILO1Om31vY/wBs2HiWy0i9eJG8maGcoVlRScoSjjgk4YHqKhU6UXexnGjh4O6ieoRokUaxxoqIgCqqjAAHQAU6uA+L/iy/8MzeG4bXV9N0aHU797e5vb63MqRKsLuOAy8llA696yPFXjPV9I0rw2zeK9Ii07VGmNx4mOms1pEVx5UewSYTfkjezY+Q9zWzmk2jpdVJtdir8XfgF4b+IvioeI7vVtT068aFYZRb7GSQL904YHBxxxVn4NfBDRfhj4hvNY0zWtRvpLq1+zNHcKgVRuVsjaAc/LXpHh6W9n0Szl1C4srq5eINJPZZ8iU/3kySdpGD1P1Nee+A/iBq3iDx1q1hJNpsml2EtzDeeVGU+wMkoSAGYsVlMq7mwoG3GKhxpqSdtWZOnSjNStqz1GjtXJ/FrxLd+EvA91rdibRZ457eIPdKTEgkmSMswBBwAxPUdK5bXfG/ibSvBJ1vTNR8NeLruTVreyt49NRo433sA0efNf8AeEHg5wMjINW5pOzNZVYxdmcZq37J/hC81S6vIPEes2sc8rSrCFjYR5OdoJGSB71T/wCGRPC//Q3a3/36i/wr0698e6hqksI8IRWd2t54cudVtBcI28zxSRqImAIxyzKR1DD2q9a+OW1l/BiaBFFKPEEbXs5kBP2e0SPLngjDeY0aDPcn0rH2dFvY5vY4Zv4TyQfsieF/+hv1v/v1F/hW74A/Zn8MeE/F2neI11/Vr6XT5hPFDKsaoXH3SSBnAPOK1l+JHiG807wY8N34b0iTXbK8ubm41BHMEZhZAqr+8XGdx6k9K0tM8f8AiDW9F8L2umafp9tr2vJcSlpy720EEDbXnAGGdWyhRcjO8ZPHIo0d0hRp4a91H+tP8zN+L/wJ074l+Ko9d1bxRqtr5NutvBbQRxmONQSTjIzkkkn8PSt/4LfCnQ/hdp+oW+lXVzez38qvNcXCqH2qMKg2gcDLH8aqat418TeHLbxLpmtw6Vcarp2iS6vpt1bo6QXUaZDK8ZYlGV9ucMQQwIxVjRfiHdanp/hs/wBnx2uo3erDS9Ys5CS1pKIJJGC88g7FZTyCrA1S9mpXtqapUVPmt7x6JRXkWkfFjUJ/DXi+a9062t9X0eO+udOT5vJvbeCV4w45zlXTa4B4yDwGFXNe8fanB4+uvDsev+E9CjgsbS4jOrKxkuHmLgqmJU6bB6/eq/axNPbRexb+Nfwj0L4pwaaNUvbqwuNOdzFPbKpYq4G5DuHTIB/CvPtC/ZY0PRtdsda0/wAZ65FdWNwlxCwii4ZSCO3TivSbDx1dD4tap4O1O3t4LGG0jks7wZXzJRGJJY2yccKwYdOFbriuWh+Lmsah4Q13XbW10zT4rbXbWxsZb1X8v7JOYts8o3Dqsm/ggYxWcvZN8zWv+RhNUHLmktf8j0zx14a07xj4S1Dw1qplFnfR+W7RNtdSCGVlPqCAfwrwb/hkTwwf+Zv1rP8A1xi/wr0TXPHWv6N4NtdZtLjQPFs8+rxWirpCsqPGVJdFJkf97hTjnHIGK1oPGF9r+vw2HhafTjZ3mgrqdpd3ETuN5nCbWVWU42544Ibr0xTkqc37y1KnGjUfvK7PJR+yL4Y/6G/Wsf8AXGL/AAqzY/sk+C45M3niTXrlP7qeVH+u016X4D8ReKdROsahr9/oKaXpN5dWdx9mtJY3Jh6ybmkIC9TjH41H4A8e6lr2ga7darpsOn39jF9ttoOfns5YzJbyNk5yQCrY6FTUqnR00M1Rw7t7u5a+HPwl8B+AZPtHh/REW+27Te3DmafB64Zvu5/2QK7quH1TxjqFv8Ej45hhtft39ix6gI3DeSHaNWI6525PrWNe+PNXsPAur+ILfW/CviR7RoEDaVHIY7Te4V5JgsjsVVTvIGDhT+GqlGOiOhThBWS8z1GiuS8Ial4l1HSBdtf+GdahkfNve6dI6Ryx4HVcvhgdw4Y9B06UVadzRSurnW0lFFMoWiikoAWikooAWiiigArE8c+G7Hxb4Uv/AA/qA/c3cRUPjmNxyrj3BANbVLSlFSTT2E0mrM/OrxPpeoeG/EN7oWqRGG8s5THKOx9GHqCMEH0Nej/s6fE4+C/EP9l6nKf7A1FwJielvJ0Eo9ugb2we1evftS/C5vFei/8ACU6Hbl9b06IiWFF+a7gHOB6uvJHqMj0r47juccA//Wr5Sth6mBr80PkeDVhPC1br5H6I6/abCmr6cwPR2MZyCOzD1Fa+kX8d/aiVeHHEi+h/wr5c/Zs+NEeirD4Q8X3f/EsJ2WN5Ic/Zs/8ALNz/AHPQ/wAPTp0+ir+1n065Gp6YQ1uRl0ByMf1X+VbxqfVpvGUFeEvjiuj/AJl+v9W+nwuJhjqSg3aS2/yf6E3jPw3F4nj0+zvJh/ZsF0Li6tip/wBJ2qdiE5GAGIb32iucv/hhYC31yy0O4j0mw1mziint1iLgTRvkTAlupX5SPZfSuh1PxZp+n6SNSlt7uaIHbL5EYcxH/a5GB79K5yX4uaAgO2w1E4/vKi/+zV2181y2FpVKi1V/kcdaEISaqaM0tW8Cwz/EGz8Z6be/Yr2GCWO4iMe6O4cxMkcjDI+ZAxGe447Csi2+Eeh2Wi6f9hZYvEVlLFcjWGRmeS4Vw0jsu7GH+cEejGmL8XLKX/j30K8kHr5i/wBAatQfEPU7jH2bwXqcynoV3H/2SsFnmVzbUZ39FJ/kjK9FtlzQfDHirRde1Kez1/SjpWo6o9/LbS6c7TKH27kEglA6LwdtX9H8L3elab4hgsdYaG61XUbi+huRAG+zNIFwNpOH27e+M+1ZzeNNdRQz+DLqNf8AprcrH/6EBVaX4ktASLrR7eAjs+r24/rW/wDbGCirttf9uz/yHzUo/wBMrap8OtX1yPxDda3rWnDU9W0Y6QkljYNFGkZJbzHDOxds9OQAMgda2oNI8fHS57abxVo0VwojNpNbaQwClWBIkV5W3KwG042kZyDWM/xa02IfvtPA/wCud7FJ/Krdj8TbK7GYtA1l19Y4Q39aUc5y6+lTX0f+REalBPR/maPgXwpd6Hq+ua7qd7aXOpa1JC1wtnbGCBBEhVcKWYljkksTk8elZd78KPDmt6hr2o+KoE1e71aY7ZG3J9ngCBI4lAbB2gE57sxNa1v43hlOP+Ec8SIPU2Bx/OrK+MNL3bZoL+A/9NbYriuqONwk1pJf16ml6VrM52PwHr+m/YNQ0fxBZPq6aZHpmpNfWRkt9RijzsZ0Dhlcbm5BIO4gjpUOi/C4WWm2NvcX1izReIjrk8VvYCK3JMZTyY49x2qMjkk9K69fFvhskK2s2kbHtJIF/nVuLXNFlO2PV9PcnoFuUP8AWtozoS2kn8xJUXs/xOMj+HE0Gl/2Jbawq6Nb65b6rp1u8G5rRI5RK9uDu5QsDt/uhscgCrb+F/E+kavqdx4Q1zTLWx1W4a6ntdQsnm8idgA8kTI68NgEq2RnJBGcV20bK67kZWU9CDkVT13VLXR9Lm1C7fbHGOF7u3ZR7mtJ+zhFzk7JdTWNFSaUVqctf+EvEFrrv/CR+Hddsk1W5sorTU1vrMtBeGPOyXajKY3G5uhIIOMcA1mXnw2v5dBk269DJ4guNct9aur+a1JiklhK7IxGrgrGFVVA3ZwMk5NZng698S+LfE8twNUvLawik8y4WOUhFHaNfr/LJro7/wCJemW19Lapo2tXAjcqJY7b5Hx3GTnFeVh81w9an7WacYttK/Xu0ddXLZRlyLV9bdLkeu+FvGertod/ca7oKapo+oSXUTrpsvkOjQtFtZDLuz87HIb04q9qml+PJrK1+z614decLJHeW0+mObWdWI2sB5hdWUAjGSGyeBxVRPiXYv8A8wDXB9bcf41Yj+INk/TRNZH/AGwH+Nbf2pgf+fn5k/2fW/lf3l/wd4Vj8PeArbwoLySVYreSJp418vBcsSUUZ2AFjtHYADtXm8Xwh8RiTQQ2raBFHoUcFuPItJUOq28Uiukd0A+35Su4EBvn56Eg+gx+N7Rv+YTqo+sI/wAasR+LbV+mm6iPrEP8aTzTAuy51+Inl1RpJx2G/Erw9deJ/CU2kWNxbwXLT288b3CFo8xTJJhgOcHZj8ayrvw14m1qxs4NeuNBgaz1e01CL+z4JVVlifcytuJ+Y8AEVvp4jt3/AOXG+H1j/wDr1KuuQkf8el3/AN8U3mmCbv7T8wlgajd3E5nRfh6ujfFi98ZWF8EsLyykjfTipxHcSSRtJKh7B/LBI/vZPc0fDv4ft4V8Sa7qcuoi7t7uQppduE2ixtmkeZ4h65kkY/QKO1dK2uwL1tLw/wDbP/69MPiO3H/LjfH6Rf8A16f9p4FP41+IlgJ3uonE6b8J7f8As/wrputtY6pY6Npt7ZXMUkJImNwUwy5+7gKeevPFWk8DeJLax0K7ttetJ9f8Pme3srm5hYx3VnJgCKcA537VT51/iTODkiur/wCEkth/y4ah/wB+P/r00+JrYH/kHamf+3f/AOvQsxwPSa/EX9nzX2Tk9R8A654htfEd/wCI9S08azquiy6PaJZxv9ms4XySct8zszEEnjhQAKtax8PPtXjfw34nsb4WkunOn9pQhTsvRHE6RN7Ou9gD/dbHYV0X/CSwH/mGar/4DH/GlHiSD/oF6t/4Cmq+v4N/b/MHgJ9YnB658In1T4dTaANVS11dL2+ubPUIkOEW5mkZ4mHUoySbWHqAR0Fal94Q8TW/jrUPEWjt4cuIr2xtbZo9SikZ42h8z5lK9jv/AErqh4ig/wCgZqw/7dGpw1+E/wDMN1X/AMBGprGYR6qZP1GV78pyXiT4ZR+J5dbOsalJANQu7W6gksiVkgMcHkyLk9nUyKf9l/WoPEXw51G7s9ci0u706D7bq+n6haQzRt5UaWqwjynA6g+Tjjsa7b+3Yv8AoHar/wCAjUo1qM/8w7VP/ARqr6zhX9oTwT/l/r+mc3L4b8R6pbaUmrnQbR9O1mDUFXTo5AjogbKkN/ES3XpTfC/w+Tw78StW8S2F7jTNQtCiaeQcW8zS+ZIydgjH5tvZi3rXUjV4z/y4al/4CtThqsZ/5ctR/wDAVqtYig3fmD6q73scfdeAr+48IeIPDv8AaUMUWu6xNdXMkYYMLWWRWkjH+2UBXPT5qr/8KuttK8Qrqnhm8nt47jTLjTb+K8u57nzY2XMJUuzbdj54HGGau6Goof8Alzvv/AdqeL9D/wAu14PrA1UqlF9RfVvI86TwZ42u/hhc+BNUvPDqW39jDT7a4tlm371VVVnDcYwDnFbdnp3ju30u5itx4RsLoGJrf7PBKY5cH50lBwQCvAYZIz0NdaLpW/5Y3A+sRqRZQ38Eg+qGri4dGT7DlPH5Pg3qGq6jf6tqHiNvD9xez+a1loBZLZfkVdx3YLOduS2Bn07kr2QHiin7KBH1en2Ckopa1NgopKWgBKWkpaAEpaSigApaKSgBa+V/2o/gnJA91468GWReJiZdT0+FeVPUzRgdR3ZR9R3r6oorKtRjWjyyMa1GNaPLI/L6GYsACeDXufwI+O994Njh0DxKJ9S0EELFIPmmsx/s5+8n+z1Hb0rvfj/+zrFrMtx4m8AxxWuoMTJc6XkLFcHqWjPRHP8Ad+6fY9flG7iu9Mv5tP1C1mtbuByk0EyFHjYdiDyK8GdGrhJ80TxJRq4Sf9WP0SsTpuvaZH4g8Jaha3VrcKf9WQ0cg7qR2Pqp/SsXVltdO0l30PwPpd5qsZy9rNhGI7lMqdx/2cg+ma+MPh74+8T+CNS+2+HtTe3DEGa3f5oZh6Oh4P14I7Gvp/wD8fPBXi+GKw8WQroOpYCiV2zbsf8AZk6p9G49zWCpUpy56Voy7NLl9U2nyv5W8me3SzKliYqFfR9H1/4PzM+y8afFnxBctb+HvDqafCrFGNvYBFQjggvJwCK2J/Cfj6S0N/4v8fxaPaDl/MvDtX8iqfrXomqWut3Ph+aDQtckaK4j/cXtv5bzRA9GQsCj/j+BFfJPxP8AhV8Um1xpp7298XGR8I7yt9oXJ4zE54H+5lR60nho2SxDm5dm7L5W0fyf3HPicNUpR5o3qLyf5rc9D1XXfglojkX3iXVvE92p+YWSnYT/AL3A/wDHjWNd/F7wlAQnh/4c6eQOFl1KYzN/3z/9enfD39l/XL1Yrzxnq8elxHBNnaYln+jOflU/TdXfavd/Ar4Ix7Xtre81lBxEoF3eE++Ttj/HbWscrsrxhGC72Tf43Z5/ssRJcztBemv4/wDAOa0LxH8XvEhT/hG9Ah061bo9rpscEQ+jyD+Rrob3wx49htftvjj4mwaDZ/xbr5h+HBRc/QmvJ/Hf7UHjPXnex8KWcWgW7najqBPdNnpyRtB9gufeo/B3wL+JvxGuo9c8Xahc6Xby4Y3Gps8t06/7MZOR/wACK/Q1ccFBvl5pT+dl+BCipPli5TfrZHUa54p+D+mEwXHifxP4ruF6i2YxxMfd3xx9CaTw/eXniJh/wgvwXt5YD9281OaWZD7lmKp+GTWnqMXwK+DJMUVmvizxRD/BK6zNG/8Atf8ALOL8AWrzfxv8c/G/isvai8XR9Ob5RaWBKfL6M/3m/Qe1Z1aGHofElfskm/vdznrqnR+Nq/aKTf3u56jdRS6EpHirxR4Q0C4AybHR9KiuLlfY4X5T9TWLdeL9Kjylgmt6qT/y1v7wQp+EcIH/AKFXB/D7wD4t8XOJ9N010s85kvrn91Ag7kufvfhmvRtIvvBHgq7+yeHVj8c+KYj890Tt02wb1LchiPRdxP8As15tSlVqLmVoQ7y1/P8ARIjD0K+LklTjZPvd/cnv8kdR4S0a8FpH4n8XTnw/pikGG3h3JPdHqFGSXAP1yfYc1bvbvWviR4ijs7KIwWNuflBJKwJ/fY92Pp+HqapeGfDnirx5qn9q61fSyRnh7xk2RovdII+gH5/7RJr23w9ounaDpy2GmwCKMcsx5Z2/vMe5rfB4CWNXJG6o7tvef+S7f57fbYPD08qp2WtR/h/X9eZ4e0ez0LSotPsUxGnLMfvSN3Y+5rRzRRX19OEacVCKskc0pOTu9w5ozRSVYhc0ZopKAFozRSUALRSUtABRmkpaACjmiigAopKWgAooooAKKSigBaKSloAKKSigBaKSigAoopaACkpaKAEopaKACikpaAEoopaACkpaKACuF+Kfwq8IfEW0xrdj5WoIu2HULfCzx+gz/Ev+y2R9K7mopXIpSipKzJlCM1aSuj4b+JfwA8c+DXlu7GA+INJTLC5s0Pmov+3Fyw+q5H0ryxHKkqchgcEHqD71+lst0y9K4Tx14D8D+LmeXXfDtpLdMP8Aj6hHkzj/AIGuCf8AgWa8qvlkZ6wdjzauXLem/kfGvg3x/wCLfB8m7w7rl1ZKTloQ2+JvrG2VP5V7H4c/ahvhbpb+L/DFlqajhpbVvLY++xsjP0Ipvin9nDTsvL4c8VywZ5WDUoN4Ht5kfP8A47XnGq/A74iWbt5NppupRjo1pfxkn/gLlW/SuRUMVQVlt96MIxxdD4b/AJn0NpPx4+FOt2b2lzqus6CsqFJIriN9pB4IDIWx9QRXG6l8K/2fvEJe40bx5a6dJId2F1Vep7lZsn9RXhl98N/iBZnEvg3Wz7xWjSD81BFUT4J8bEgHwhr5Pp/Zsv8A8TR7drSUPzX/AADSWKq1dKlPm+Wp9hfCTwB8Ivh+qXmn6xoupatjnUrq+heQf7gzhB9OfUmq3xo1q414Ppul/GDwj4X0griby7gPdTZHILBxtX2Xn1PavlWw+GHxGu2HkeCtZGe8lqYx+bYrpdF+AXxBvHBvoLDS0bqbi5Td/wB8g/1rX6/ePJGH3Xf5amkXWnHkjSsvmvx0/Msy+DfgxpJ8/VPipf6uwOXh0jTCC30d8rVjTPHHgDSblYPAPwuk1XUQf3V7rspuXB7HyV+UfXIrtvCn7NulxyJLr+vfawOTFCCFP5Y/9Cr2Twr8OfBWgxLHaaWkoXtIAF/FRgH8c1lGniqn8Kko+b/4N3+CNaOXJa1Go+i5n970/FnhlpoPxV+KMqx+KtTvJbLIxptgRBbIOwcrhQPb5j717X4B+D+j6FbQjU0huPL5S0hXbAh9+7n6/rXods8cUSxQxpFGowqIoUD6AVajcmumllEZSVTEy55eey+X+dz1IVI0U1RVr7veT+f6Kw6NEjjWONFRFGFVRgAegFOpB0or2DEKWikoAKKKKAFpKWigBKKWkoAKKWigApKKKAFopKWgApKWkoAKWkooAKKKKAFopKWgBKWkpaAEooooAO9FFFABRRRQAHrR3oooAWkFFFAC0UUUAJSiiigBKQqGHIoooAgkhjbqKpz2kBzlaKKAM+5061f7yH86y7zRNPkyHiJz70UUAZx8NaUpysTqfVXxSrodovCzXgHoLhqKKAJY9A09vviZ/wDekJ/nWja6Lp8eNkRH40UUAadtY2ygYQ1oRW0K4wtFFAFmOJB0FShQDwKKKAHHikoooAWkoooAWiiigAooooAKSiigAooooAXvRRRQAUlFFAC0UUUAFFFFACUtFFABSUUUAFFFFAC0UUUAf//Z"/></a></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-botanical-mid font-bold bg-surface-mint rounded-lg px-3 py-1.5"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors px-2 py-1" data-path="nos-analyses" href="#" data-fr="Nos analyses" data-ar="خدماتنا">Nos analyses</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors px-2 py-1" data-path="notre-methode" href="#" data-fr="Notre méthode" data-ar="منهجيتنا">Notre méthode</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors px-2 py-1" data-path="le-laboratoire" href="#" data-fr="Le laboratoire" data-ar="المخبر">Le laboratoire</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors px-2 py-1" data-path="faq" href="#" data-fr="FAQ" data-ar="الأسئلة الشائعة">FAQ</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-forest-deep transition-colors px-2 py-1" data-path="contact" href="#" data-fr="Contact" data-ar="اتصل بنا">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg bg-lime-vibrant hover:bg-secondary-container text-ink-primary hover:text-ink-primary px-space-lg py-space-sm rounded-full shadow-[0_9px_22px_rgba(16,39,25,0.12)] hover:-translate-y-0.5 transition-all duration-200 font-bold" data-path="demande-analyse" href="#"><span class="material-symbols-outlined text-[18px] me-1.5">biotech</span><span data-fr="Demander une analyse" data-ar="اطلب تحليلاً">Demander une analyse</span></a></div></div></div></header><main class="w-full pt-28 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- Interactive Bilingual Hero Section -->
+<section class="relative w-full overflow-hidden bg-gradient-to-br from-forest-darkest via-forest-deep to-forest-surface text-surface-bright py-space-xl md:py-24">
+<!-- Atmospheric Orbit Background Deco -->
+<div class="absolute -right-24 -bottom-36 w-[560px] h-[560px] rounded-full pointer-events-none opacity-20 bg-gradient-to-tr from-lime-vibrant/20 to-botanical-mid/40 blur-3xl"></div>
+<div class="absolute top-12 left-1/3 w-72 h-72 rounded-full pointer-events-none opacity-10 bg-lime-vibrant blur-2xl"></div>
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Column: Editorial Value Proposition -->
+<div class="lg:col-span-7 flex flex-col space-y-space-md">
+<div class="inline-flex items-center gap-space-xs self-start">
+<span class="w-6 h-[2px] bg-lime-vibrant"></span>
+<span class="text-label-kicker font-label-kicker text-lime-vibrant uppercase" data-ar="خبرة في خدمة محاصيلك" data-fr="L'expertise au service de vos cultures">
+              L'expertise au service de vos cultures
+            </span>
+</div>
+<h1 class="font-display text-display md:text-[68px] leading-[1.08] tracking-[-2px] text-surface-bright" data-ar="أرضك تتكلم،&lt;br&gt;&lt;em class='text-lime-vibrant not-italic'&gt;ونحن نفهمها.&lt;/em&gt;" data-fr="Votre terre parle.&lt;br&gt;&lt;em class='text-lime-vibrant not-italic'&gt;Nous la comprenons.&lt;/em&gt;">
+            Votre terre parle.<br/><em class="text-lime-vibrant not-italic">Nous la comprenons.</em>
+</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high max-w-xl leading-relaxed" data-ar="تحاليل فلاحية وبيئية دقيقة لفهم التربة ومراقبة ملوحة مياه الري وترشيد الأسمدة لضمان مردودية فلاحية مستدامة في قفصة والجنوب التونسي." data-fr="Des analyses agricoles et environnementales de haute précision pour maîtriser la salinité, optimiser vos apports fertilisants et rentabiliser chaque goutte d'irrigation à Gafsa et dans le Sud tunisien.">
+            Des analyses agricoles et environnementales de haute précision pour maîtriser la salinité, optimiser vos apports fertilisants et rentabiliser chaque goutte d'irrigation à Gafsa et dans le Sud tunisien.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-lime-vibrant hover:bg-secondary-container text-ink-primary px-7 py-3.5 rounded-full shadow-[0_12px_28px_rgba(200,239,120,0.22)] hover:-translate-y-0.5 transition-all duration-200" href="#demande-analyse">
+<span class="material-symbols-outlined text-[18px] me-2">lab_profile</span>
+<span data-ar="اطلب تحليلاً مخبرياً ←" data-fr="Demander une analyse →">Demander une analyse →</span>
+</a>
+<a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-forest-surface/70 hover:bg-forest-surface text-surface-bright border border-surface-container-highest/20 px-6 py-3.5 rounded-full transition-all duration-200" href="#services">
+<span class="material-symbols-outlined text-[18px] me-2">science</span>
+<span data-ar="اكتشف خدمات التحليل" data-fr="Découvrir nos analyses">Découvrir nos analyses</span>
+</a>
+</div>
+<!-- Trust Badges Protocol -->
+<div class="pt-space-md flex flex-wrap items-center gap-space-lg text-surface-dim font-label-md text-label-md border-t border-forest-surface/70">
+<div class="flex items-center gap-2">
+<span class="font-metric-display text-[22px] text-lime-vibrant font-extrabold">01</span>
+<span data-ar="افهم التربة" data-fr="Comprendre le sol">Comprendre le sol</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-display text-[22px] text-lime-vibrant font-extrabold">02</span>
+<span data-ar="قياس دقيق" data-fr="Mesurer avec précision">Mesurer avec précision</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-metric-display text-[22px] text-lime-vibrant font-extrabold">03</span>
+<span data-ar="تصرّف واقتصد" data-fr="Agir &amp; Économiser">Agir &amp; Économiser</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Diagnostic Gauge & Graphic -->
+<div class="lg:col-span-5 relative flex items-center justify-center py-6">
+<div class="relative w-[340px] sm:w-[390px] aspect-square rounded-full flex items-center justify-center bg-gradient-to-b from-forest-surface/50 to-forest-darkest/90 border border-surface-bright/10 shadow-[0_25px_60px_rgba(0,0,0,0.45)]">
+<!-- Concentric rings -->
+<div class="absolute inset-4 rounded-full border border-surface-bright/10 pointer-events-none"></div>
+<div class="absolute inset-10 rounded-full border border-lime-vibrant/20 border-dashed animate-spin [animation-duration:45s] pointer-events-none"></div>
+<!-- Core Brand Emblem Badge -->
+<div class="w-44 h-44 rounded-full bg-surface-cream shadow-2xl flex flex-col items-center justify-center text-center p-4 relative z-10">
+<div class="w-12 h-12 rounded-2xl bg-forest-deep flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-lime-vibrant text-[28px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-forest-deep leading-tight">WestLab</span>
+<span class="font-label-kicker text-[10px] text-botanical-mid uppercase tracking-widest" data-ar="تشخيص مخبري" data-fr="Diagnostic Vital">Diagnostic Vital</span>
+</div>
+<!-- Floating Data Chip 1: Soil Status -->
+<div class="absolute -top-3 left-2 sm:-left-4 bg-surface-container-lowest text-forest-deep py-2.5 px-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.22)] border border-stroke-soft flex items-center gap-3 z-20">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid">
+<span class="material-symbols-outlined text-[18px]">nature</span>
+</div>
+<div>
+<span class="block text-[11px] font-label-kicker uppercase text-ink-muted" data-ar="التربة الفلاحية" data-fr="Sol agricole">Sol agricole</span>
+<span class="font-headline-sm text-sm text-forest-deep flex items-center gap-1 font-bold">
+                  pH 7.8 · <span class="text-botanical-mid" data-fr="Optimal" data-ar="مثالي">Optimal</span>
+</span>
+</div>
+</div>
+<!-- Floating Data Chip 2: Irrigation Salinity -->
+<div class="absolute -right-2 sm:-right-6 top-1/2 -translate-y-1/2 bg-surface-container-lowest text-forest-deep py-2.5 px-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.22)] border border-stroke-soft flex items-center gap-3 z-20">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div>
+<span class="block text-[11px] font-label-kicker uppercase text-ink-muted" data-ar="مياه الري" data-fr="Eau d'irrigation">Eau d'irrigation</span>
+<span class="font-headline-sm text-sm text-forest-deep flex items-center gap-1 font-bold">
+                  EC: 2.1 dS/m <span class="w-2 h-2 rounded-full bg-lime-vibrant inline-block"></span>
+</span>
+</div>
+</div>
+<!-- Floating Data Chip 3: Foliar Health -->
+<div class="absolute -bottom-4 left-8 sm:left-12 bg-surface-container-lowest text-forest-deep py-2.5 px-4 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.22)] border border-stroke-soft flex items-center gap-3 z-20">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<span class="block text-[11px] font-label-kicker uppercase text-ink-muted" data-ar="التوازن النباتي" data-fr="Équilibre Végétal">Équilibre Végétal</span>
+<span class="font-headline-sm text-sm text-forest-deep font-bold" data-ar="تشخيص الأزوت N-P-K" data-fr="Diagnostic Azote N-P-K">Diagnostic Azote N-P-K</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Value Pillars Strip (3-Steps Band) -->
+<section class="w-full bg-surface-sage py-space-lg">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="flex items-start gap-4 p-2">
+<span class="font-metric-display text-metric-display text-botanical-mid shrink-0 font-extrabold">01</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-forest-deep font-bold" data-ar="حاجة واضحة" data-fr="Un besoin précis">Un besoin précis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" data-ar="نحدد معك حزمة التحاليل المناسبة لأشجارك أو زراعاتك الكبرى بدقة." data-fr="Nous définissons avec vous le pack analytique rigoureusement adapté à vos arbres ou grandes cultures.">
+              Nous définissons avec vous le pack analytique rigoureusement adapté à vos arbres ou grandes cultures.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-2">
+<span class="font-metric-display text-metric-display text-botanical-mid shrink-0 font-extrabold">02</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-forest-deep font-bold" data-ar="نتائج مفهومة ومفسرة" data-fr="Des résultats lisibles">Des résultats lisibles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" data-ar="تقارير مبسّطة مع ملخص بياني وعتبات حرجة وتوصيات عملية." data-fr="Rapports d'essais simplifiés avec synthèse graphique, seuils critiques et préconisations concrètes.">
+              Rapports d'essais simplifiés avec synthèse graphique, seuils critiques et préconisations concrètes.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-2">
+<span class="font-metric-display text-metric-display text-botanical-mid shrink-0 font-extrabold">03</span>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-forest-deep font-bold" data-ar="قرار فلاحي مدروس" data-fr="Une décision éclairée">Une décision éclairée</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" data-ar="وداعاً لهدر الأسمدة وأخطاء الري. ارفع مردودية الهكتار." data-fr="Fini les gaspillages d'engrais et les erreurs d'irrigation. Maximisez le rendement à l'hectare.">
+              Fini les gaspillages d'engrais et les erreurs d'irrigation. Maximisez le rendement à l'hectare.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Domaines d'Analyse (Interactive Service Cards) -->
+<section class="w-full py-space-xl md:py-24 bg-surface" id="services">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-2xl mb-space-xl">
+<span class="text-label-kicker font-label-kicker text-botanical-mid uppercase tracking-wider block mb-2" data-ar="مجالات اختصاصنا" data-fr="Nos domaines d'expertise">
+          Nos domaines d'expertise
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-forest-deep tracking-tight" data-ar="المعلومة المخبرية الصحيحة لاتخاذ القرار الفلاحي السديد." data-fr="Les bonnes données pour les bonnes décisions.">
+          Les bonnes données pour les bonnes décisions.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" data-ar="لكل ضيعة وتربة خصوصياتها. اختر صنف التحليل الذي تبحث عنه للحصول على بروتوكول مخصص." data-fr="Chaque terroir et chaque parcelle possèdent leurs particularités. Sélectionnez votre domaine d'intervention pour un protocole sur-mesure.">
+          Chaque terroir et chaque parcelle possèdent leurs particularités. Sélectionnez votre domaine d'intervention pour un protocole sur-mesure.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Service 1: Sol -->
+<div class="bg-surface-paper rounded-2xl p-6 shadow-sm hover:shadow-[0_18px_55px_rgba(19,48,29,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-mint flex items-center justify-center text-botanical-mid mb-5 group-hover:bg-lime-vibrant group-hover:text-forest-deep transition-colors">
+<span class="material-symbols-outlined text-[28px]">terrain</span>
+</div>
+<span class="text-[11px] font-label-kicker text-ink-muted uppercase block mb-1" data-ar="حزمة فلاحية 01" data-fr="Pack Agronomique 01">Pack Agronomique 01</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-deep mb-3 font-bold" data-ar="تحليل التربة الفلاحية" data-fr="Analyse de Sol">Analyse de Sol</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4" data-ar="تشخيص فيزيائي وكيميائي شامل: الحموضة (pH)، الناقلية الكهربائية، الكلس الفعال، المادة العضوية، ميزان N-P-K والعناصر الصغرى القابلة للامتصاص." data-fr="Diagnostic physico-chimique intégral : pH, conductivité électrique (CE), calcaire actif, matière organique, bilan N-P-K et oligo-éléments assimilables.">
+              Diagnostic physico-chimique intégral : pH, conductivité électrique (CE), calcaire actif, matière organique, bilan N-P-K et oligo-éléments assimilables.
+            </p>
+</div>
+<div class="pt-4 border-t border-stroke-soft flex items-center justify-between">
+<span class="text-label-md text-label-md text-botanical-mid font-bold group-hover:text-forest-deep flex items-center gap-1">
+<span data-ar="تعرّف أكثر على تربتك" data-fr="Mieux connaître votre sol">Mieux connaître votre sol</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<!-- Service 2: Eau d'irrigation -->
+<div class="bg-surface-paper rounded-2xl p-6 shadow-sm hover:shadow-[0_18px_55px_rgba(19,48,29,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-mint flex items-center justify-center text-botanical-mid mb-5 group-hover:bg-lime-vibrant group-hover:text-forest-deep transition-colors">
+<span class="material-symbols-outlined text-[28px]">water</span>
+</div>
+<span class="text-[11px] font-label-kicker text-ink-muted uppercase block mb-1" data-ar="حزمة فلاحية 02" data-fr="Pack Agronomique 02">Pack Agronomique 02</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-deep mb-3 font-bold" data-ar="تحليل مياه الري" data-fr="Eau d'Irrigation">Eau d'Irrigation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4" data-ar="فحص ملوحة المياه، حساب مؤشر الصوديوم SAR (خطر القلوية)، ومحتوى الكلورورات والكبريتات والنترات والبيكربونات، ومدى صلاحية الماء لشرب الماشية." data-fr="Contrôle de la salinité, calcul du SAR (risque d'alcalinisation), teneur en chlorures, sulfates, nitrates, bicarbonates et potabilité pour l'élevage.">
+              Contrôle de la salinité, calcul du SAR (risque d'alcalinisation), teneur en chlorures, sulfates, nitrates, bicarbonates et potabilité pour l'élevage.
+            </p>
+</div>
+<div class="pt-4 border-t border-stroke-soft flex items-center justify-between">
+<span class="text-label-md text-label-md text-botanical-mid font-bold group-hover:text-forest-deep flex items-center gap-1">
+<span data-ar="راقب جودة مياهك" data-fr="Contrôler la qualité d'eau">Contrôler la qualité d'eau</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<!-- Service 3: Foliaire & Végétal -->
+<div class="bg-surface-paper rounded-2xl p-6 shadow-sm hover:shadow-[0_18px_55px_rgba(19,48,29,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-mint flex items-center justify-center text-botanical-mid mb-5 group-hover:bg-lime-vibrant group-hover:text-forest-deep transition-colors">
+<span class="material-symbols-outlined text-[28px]">potted_plant</span>
+</div>
+<span class="text-[11px] font-label-kicker text-ink-muted uppercase block mb-1" data-ar="حزمة فلاحية 03" data-fr="Pack Agronomique 03">Pack Agronomique 03</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-deep mb-3 font-bold" data-ar="تحليل الأوراق والنبات" data-fr="Analyse Végétale">Analyse Végétale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4" data-ar="تشخيص غذائي مباشر على الأوراق: الكشف المبكر عن نقص المعادن (الحديد، الزنك، البورون، المغنيسيوم) وتصحيح التسميد بشكل مستهدف." data-fr="Diagnostic nutritionnel direct sur tissus foliaires : identification précoce des carences minérales (Fer, Zinc, Bore, Magnésium) et correction ciblée.">
+              Diagnostic nutritionnel direct sur tissus foliaires : identification précoce des carences minérales (Fer, Zinc, Bore, Magnésium) et correction ciblée.
+            </p>
+</div>
+<div class="pt-4 border-t border-stroke-soft flex items-center justify-between">
+<span class="text-label-md text-label-md text-botanical-mid font-bold group-hover:text-forest-deep flex items-center gap-1">
+<span data-ar="تابع تغذية الأوراق" data-fr="Suivre la nutrition foliaire">Suivre la nutrition foliaire</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</span>
+</div>
+</div>
+<!-- Service 4: Environnement & Intrants -->
+<div class="bg-surface-paper rounded-2xl p-6 shadow-sm hover:shadow-[0_18px_55px_rgba(19,48,29,0.09)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-surface-mint flex items-center justify-center text-botanical-mid mb-5 group-hover:bg-lime-vibrant group-hover:text-forest-deep transition-colors">
+<span class="material-symbols-outlined text-[28px]">biotech</span>
+</div>
+<span class="text-[11px] font-label-kicker text-ink-muted uppercase block mb-1" data-ar="حزمة فلاحية 04" data-fr="Pack Agronomique 04">Pack Agronomique 04</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-deep mb-3 font-bold" data-ar="المدخلات والأسمدة العضوية" data-fr="Intrants &amp; Compost">Intrants &amp; Compost</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-4" data-ar="مراقبة جودة الكومبوست والسماد الحيواني والمحسّنات العضوية والأسمدة، والتثبّت من مطابقتها للمعايير الفلاحية والبيئية." data-fr="Contrôle qualité des composts, fumiers, amendements organiques et fertilisants. Validation de la conformité agronomique et environnementale.">
+              Contrôle qualité des composts, fumiers, amendements organiques et fertilisants. Validation de la conformité agronomique et environnementale.
+            </p>
+</div>
+<div class="pt-4 border-t border-stroke-soft flex items-center justify-between">
+<span class="text-label-md text-label-md text-botanical-mid font-bold group-hover:text-forest-deep flex items-center gap-1">
+<span data-ar="افحص الأسمدة والمخصبات" data-fr="Analyser vos intrants">Analyser vos intrants</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Notre Méthode en 3 Étapes -->
+<section class="w-full py-space-xl bg-surface-container-low" id="methode">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="max-w-2xl mb-space-xl">
+<span class="text-label-kicker font-label-kicker text-botanical-mid uppercase tracking-wider block mb-2" data-ar="منهجية العمل" data-fr="Protocole d'accompagnement">
+          Protocole d'accompagnement
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-forest-deep tracking-tight" data-ar="خطوات علمية بسيطة، من العينة إلى الحل الفلاحي." data-fr="Un parcours simple, de l'échantillon au résultat.">
+          Un parcours simple, de l'échantillon au résultat.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2" data-ar="التشخيص الجيد يقوم على أخذ عينات مضبوط وتتبّع صارم للعينة داخل المخبر." data-fr="Un bon diagnostic repose sur un protocole d'échantillonnage maîtrisé et une traçabilité rigoureuse en laboratoire.">
+          Un bon diagnostic repose sur un protocole d'échantillonnage maîtrisé et une traçabilité rigoureuse en laboratoire.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-surface-paper rounded-2xl p-7 relative overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="w-full h-1 bg-forest-deep absolute top-0 left-0"></div>
+<div>
+<span class="font-display text-4xl text-lime-muted font-extrabold block mb-4">01</span>
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-3 font-bold" data-ar="تحديد الحاجة وأخذ العينة" data-fr="Décrivez votre besoin &amp; Prélèvement">
+              Décrivez votre besoin &amp; Prélèvement
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-ar="حدد نوع المحصول (الزيتون، الفستق، الخضروات، التمور) والمساحة، واتبع دليل أخذ العينات الذي نوفره لك." data-fr="Renseignez le type de culture (oliviers, pistachiers, maraîchage, dattes), la superficie et suivez notre guide de prélèvement sous forme d'échantillons composites.">
+              Renseignez le type de culture (oliviers, pistachiers, maraîchage, dattes), la superficie et suivez notre guide de prélèvement sous forme d'échantillons composites.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-kicker text-botanical-mid font-bold">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+<span data-ar="بطاقة معلومات الضيعة متوفرة" data-fr="Fiche de parcelle fournie">Fiche de parcelle fournie</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-paper rounded-2xl p-7 relative overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="w-full h-1 bg-forest-deep absolute top-0 left-0"></div>
+<div>
+<span class="font-display text-4xl text-lime-muted font-extrabold block mb-4">02</span>
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-3 font-bold" data-ar="استلام العينة والتحاليل المخبرية" data-fr="Réception &amp; Essais Instrumentaux">
+              Réception &amp; Essais Instrumentaux
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-ar="فور وصول العينة إلى مخبر قفصة، تخضع للتجفيف والطحن ثم للقياس بأجهزة مطيافية امتصاصية ومجسّات معايَرة." data-fr="Dès l'arrivée au laboratoire de Gafsa, séchage, broyage et passage sur spectromètres d'absorption et sondes étalonnées.">
+              Dès l'arrivée au laboratoire de Gafsa, séchage, broyage et passage sur spectromètres d'absorption et sondes étalonnées.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-kicker text-botanical-mid font-bold">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+<span data-ar="أجهزة قياس معيرة دورياً" data-fr="Appareillage étalonné">Appareillage étalonné</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-paper rounded-2xl p-7 relative overflow-hidden flex flex-col justify-between shadow-sm">
+<div class="w-full h-1 bg-forest-deep absolute top-0 left-0"></div>
+<div>
+<span class="font-display text-4xl text-lime-muted font-extrabold block mb-4">03</span>
+<h3 class="font-headline-md text-headline-md text-forest-deep mb-3 font-bold" data-ar="تقرير التحليل والتوصيات العملية" data-fr="Rapport &amp; Plan d'Action Agronomique">
+              Rapport &amp; Plan d'Action Agronomique
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed" data-ar="تسليم تقرير مفسَّر مع برنامج تسميد محسوب بدقة وتوصيات لتحسين التربة من مهندسنا الفلاحي." data-fr="Délivrance de votre rapport commenté avec plan de fertilisation calculé au plus juste et recommandations d'amendements par notre agronome.">
+              Délivrance de votre rapport commenté avec plan de fertilisation calculé au plus juste et recommandations d'amendements par notre agronome.
+            </p>
+</div>
+<div class="mt-6 flex items-center gap-2 text-label-kicker text-botanical-mid font-bold">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span data-ar="التفسير والتوجيه متضمن" data-fr="Interprétation incluse">Interprétation incluse</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- L'esprit WestLab (Laboratoire Showcase Bento) -->
+<section class="w-full py-space-xl bg-surface" id="le-laboratoire">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-forest-deep rounded-3xl p-8 md:p-12 text-surface-bright relative overflow-hidden shadow-2xl">
+<!-- Background Ambient Glow -->
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-botanical-mid/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center relative z-10">
+<div class="lg:col-span-7 space-y-space-md">
+<span class="text-label-kicker font-label-kicker text-lime-vibrant uppercase tracking-wider block" data-ar="روح WestLab قفصة" data-fr="L'esprit WestLab Gafsa">
+              L'esprit WestLab Gafsa
+            </span>
+<h2 class="font-headline-lg text-headline-lg text-surface-bright leading-tight font-bold" data-ar="العلم والخبرة المخبرية في خدمة المردودية الفلاحية." data-fr="La science du terrain, au service de la productivité agricole.">
+              La science du terrain, au service de la productivité agricole.
+            </h2>
+<p class="font-body-md text-body-md text-surface-container-high leading-relaxed" data-ar="تأسس مخبر WestLab في قلب الحوض الفلاحي بالجنوب الغربي التونسي ليربط بين المعايير العلمية الحديثة والتحديات الطبيعية الحقيقية (أراضي كلسية، جفاف، مياه مالحة)." data-fr="Fondé au cœur du bassin agricole du Sud-Ouest tunisien, WestLab fait le pont entre la rigueur analytique moderne et les réalités climatiques et pédologiques locales (sols calcaires, stress hydrique, eaux saumâtres).">
+              Fondé au cœur du bassin agricole du Sud-Ouest tunisien, WestLab fait le pont entre la rigueur analytique moderne et les réalités climatiques et pédologiques locales (sols calcaires, stress hydrique, eaux saumâtres).
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs font-label-md text-label-md">
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-lime-vibrant text-forest-deep flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+<span data-ar="أخذ العينات في عين المكان متاح" data-fr="Prélèvements sur site disponibles">Prélèvements sur site disponibles</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-lime-vibrant text-forest-deep flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+<span data-ar="تحاليل المياه: النتائج خلال 48 ساعة" data-fr="Analyses d'eau : résultats sous 48h">Analyses d'eau : résultats sous 48h</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-lime-vibrant text-forest-deep flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+<span data-ar="استشارة فلاحية مرافقة للتقرير" data-fr="Interprétation par agronome conseil">Interprétation par agronome conseil</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-6 h-6 rounded-full bg-lime-vibrant text-forest-deep flex items-center justify-center font-bold text-xs shrink-0">✓</span>
+<span data-ar="شفافية تامة في الأسعار" data-fr="Transparence tarifaire intégrale">Transparence tarifaire intégrale</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg bg-lime-vibrant hover:bg-secondary-container text-ink-primary px-6 py-3 rounded-full font-bold transition-all" href="#demande-analyse">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span data-ar="تواصل مع مهندسنا" data-fr="Échanger avec notre ingénieur">Échanger avec notre ingénieur</span>
+</a>
+</div>
+</div>
+<!-- Right Interactive Graphic Card -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="w-full bg-gradient-to-br from-forest-surface to-forest-darkest p-6 rounded-2xl border border-surface-bright/15 shadow-xl flex flex-col items-center text-center space-y-4">
+<div class="w-20 h-20 rounded-full bg-surface-mint/10 border border-lime-vibrant/30 flex items-center justify-center text-lime-vibrant">
+<span class="material-symbols-outlined text-[42px]">health_and_safety</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-surface-bright font-bold block" data-ar="مرافقة تقنية" data-fr="Accompagnement Technique">Accompagnement Technique</span>
+<span class="text-body-sm text-surface-container-high block mt-1" data-ar="قفصة والجنوب التونسي" data-fr="Gafsa et le Sud tunisien">Gafsa et le Sud tunisien</span>
+</div>
+<div class="w-full bg-forest-darkest/60 rounded-xl p-4 text-left border border-white/5 space-y-2">
+<div class="flex justify-between text-body-sm font-label-md">
+<span class="text-surface-dim" data-ar="أنواع التحاليل" data-fr="Types d'analyses">Types d'analyses</span>
+<span class="text-lime-vibrant font-bold">4</span>
+</div>
+<div class="w-full bg-forest-surface h-2 rounded-full overflow-hidden">
+<div class="bg-lime-vibrant h-full w-[99%]"></div>
+</div>
+<div class="flex justify-between text-body-sm font-label-md pt-1">
+<span class="text-surface-dim" data-ar="رد سريع" data-fr="Réponse rapide">Réponse rapide</span>
+<span class="text-surface-bright font-bold">WhatsApp</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion Section -->
+<section class="w-full py-space-xl bg-surface-cream" id="faq">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<div class="lg:col-span-5">
+<span class="text-label-kicker font-label-kicker text-botanical-mid uppercase tracking-wider block mb-2" data-ar="الأسئلة الشائعة" data-fr="Questions fréquentes">
+            Questions fréquentes
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-forest-deep tracking-tight mb-4" data-ar="كل ما تحتاج معرفته قبل إرسال العينات." data-fr="Tout ce qu'il faut savoir avant d'envoyer vos échantillons.">
+            Tout ce qu'il faut savoir avant d'envoyer vos échantillons.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6" data-ar="هل لديك تساؤل حول طريقة أخذ عينة التربة أو مياه البئر؟ راجع إجابات خبرائنا أو اتصل بنا مباشرة." data-fr="Vous avez un doute sur la méthode de prélèvement de terre ou d'eau de puits ? Consultez nos réponses d'experts ou contactez-nous directement sur WhatsApp.">
+            Vous avez un doute sur la méthode de prélèvement de terre ou d'eau de puits ? Consultez nos réponses d'experts ou contactez-nous directement sur WhatsApp.
+          </p>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-forest-deep bg-surface-paper px-4 py-2.5 rounded-full shadow-sm hover:bg-surface-mint transition-colors" href="tel:+21622945050">
+<span class="material-symbols-outlined text-[18px] text-botanical-mid">call</span>
+<span><bdi dir="ltr">+216 22 945 050</bdi> <span data-fr="(Service Direct)" data-ar="(خط مباشر)">(Service Direct)</span></span>
+</a>
+</div>
+<div class="lg:col-span-7 space-y-3">
+<details class="group bg-surface-paper rounded-2xl p-5 shadow-sm transition-all [&amp;_summary::-webkit-details-marker]:hidden open:shadow-md cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-forest-deep font-bold">
+<span data-ar="كيف أحضّر عينة ممثلة ودقيقة من التربة؟" data-fr="Comment préparer un échantillon représentatif de sol ?">
+                Comment préparer un échantillon représentatif de sol ?
+              </span>
+<span class="material-symbols-outlined text-botanical-mid group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-stroke-soft pt-3" data-ar="لقطعة أرض متجانسة، خذ 10 إلى 15 عينة فرعية بشكل متعرّج على عمق 0 - 30 سم (للأشجار أو الخضروات). اخلطها في دلو نظيف، ثم خذ حوالي 1 كغ من التربة في كيس بلاستيكي نظيف ومُعنوَن." data-fr="Pour une parcelle homogène, réalisez 10 à 15 sous-prélèvements en zigzag à une profondeur de 0-30 cm (arbres ou maraîchage). Mélangez-les dans un seau propre, puis prélevez environ 1 kg de terre dans un sac plastique propre et étiqueté.">
+              Pour une parcelle homogène, réalisez 10 à 15 sous-prélèvements en zigzag à une profondeur de 0-30 cm (arbres ou maraîchage). Mélangez-les dans un seau propre, puis prélevez environ 1 kg de terre dans un sac plastique propre et étiqueté.
+            </p>
+</details>
+<details class="group bg-surface-paper rounded-2xl p-5 shadow-sm transition-all [&amp;_summary::-webkit-details-marker]:hidden open:shadow-md cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-forest-deep font-bold">
+<span data-ar="كيف أقوم بأخذ عينة مياه صالحة للتحليل من البئر؟" data-fr="Comment prélever l'eau d'irrigation d'un sondage ou puits ?">
+                Comment prélever l'eau d'irrigation d'un sondage ou puits ?
+              </span>
+<span class="material-symbols-outlined text-botanical-mid group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-stroke-soft pt-3" data-ar="اترك المضخة تشتغل 15 إلى 30 دقيقة على الأقل لإخراج الماء الراكد. اشطف قارورة ماء معدني نظيفة (1.5 لتر) ثلاث مرات بنفس الماء، ثم املأها حتى الحافة لطرد الهواء، وأغلقها بإحكام واحفظها في مكان بارد." data-fr="Laissez tourner la pompe pendant au moins 15 à 30 minutes afin d'évacuer l'eau stagnante. Rincez une bouteille d'eau minérale propre (1,5 L) 3 fois avec cette même eau, remplissez à ras-bord pour chasser l'air, fermez hermétiquement et conservez au frais.">
+              Laissez tourner la pompe pendant au moins 15 à 30 minutes afin d'évacuer l'eau stagnante. Rincez une bouteille d'eau minérale propre (1,5 L) 3 fois avec cette même eau, remplissez à ras-bord pour chasser l'air, fermez hermétiquement et conservez au frais.
+            </p>
+</details>
+<details class="group bg-surface-paper rounded-2xl p-5 shadow-sm transition-all [&amp;_summary::-webkit-details-marker]:hidden open:shadow-md cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-forest-deep font-bold">
+<span data-ar="ما هي المدة اللازمة لصدور نتائج التحليل؟" data-fr="Quels sont les délais moyens de traitement des analyses ?">
+                Quels sont les délais moyens de traitement des analyses ?
+              </span>
+<span class="material-symbols-outlined text-botanical-mid group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-stroke-soft pt-3" data-ar="تحاليل المياه تصدر نتائجها خلال 48 ساعة. أما تحاليل التربة والأوراق فيتحدد الأجل حسب نوع وعدد العناصر المطلوبة، تواصل معنا لمعرفته." data-fr="Les analyses d'eau sont rendues sous 48h. Pour les analyses de sols et de feuilles, le délai dépend du type et du nombre d'éléments demandés : contactez-nous pour le connaître.">
+              Les analyses d'eau sont rendues sous 48h. Pour les analyses de sols et de feuilles, le délai dépend du type et du nombre d'éléments demandés : contactez-nous pour le connaître.
+            </p>
+</details>
+<details class="group bg-surface-paper rounded-2xl p-5 shadow-sm transition-all [&amp;_summary::-webkit-details-marker]:hidden open:shadow-md cursor-pointer">
+<summary class="flex items-center justify-between font-headline-sm text-headline-sm text-forest-deep font-bold">
+<span data-ar="هل توجد باقات مدمجة تجمع بين تحليل التربة والماء والإرشاد؟" data-fr="Proposez-vous des formules combinées sol + eau + conseils ?">
+                Proposez-vous des formules combinées sol + eau + conseils ?
+              </span>
+<span class="material-symbols-outlined text-botanical-mid group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed border-t border-stroke-soft pt-3" data-ar="طبعاً. باقات «تشخيص المستثمرة» عندنا تجمع بين خصائص التربة وجودة مياه الري ومقترح برنامج تسميد موسمي بسعر مناسب للفلاحين." data-fr="Absolument. Nos packs 'Diagnostic Exploitation' combinent le profil du sol, la qualité de l'eau d'irrigation et une proposition de plan de fertilisation saisonnier avec un tarif avantageux pour les agriculteurs.">
+              Absolument. Nos packs 'Diagnostic Exploitation' combinent le profil du sol, la qualité de l'eau d'irrigation et une proposition de plan de fertilisation saisonnier avec un tarif avantageux pour les agriculteurs.
+            </p>
+</details>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Intake Form & WhatsApp Direct Dispatcher -->
+<section class="w-full py-space-xl md:py-24 bg-surface-sage" id="demande-analyse">
+<div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin">
+<div class="bg-surface-paper rounded-3xl p-8 md:p-12 shadow-[0_18px_55px_rgba(19,48,29,0.09)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- Contact Details Left -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="text-label-kicker font-label-kicker text-botanical-mid uppercase tracking-wider block mb-2" data-ar="تسجيل العينات وطلب عرض سعر" data-fr="Dépôt d'échantillons &amp; Devis">
+                Dépôt d'échantillons &amp; Devis
+              </span>
+<h2 class="font-headline-lg text-headline-lg text-forest-deep tracking-tight mb-4" data-ar="ما نوع العينة التي ترغب في تحليلها؟" data-fr="Quel échantillon souhaitez-vous analyser ?">
+                Quel échantillon souhaitez-vous analyser ?
+              </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-6" data-ar="املأ هذه الاستمارة البسيطة. سيقوم فريق المخبر بتجهيز طلبك والتواصل معك فوراً عبر واتساب لتنسيق الاستلام." data-fr="Remplissez ce formulaire rapide. Notre laboratoire prépare votre dossier et vous contacte immédiatement sur WhatsApp pour coordonner le dépôt ou la prise en charge.">
+                Remplissez ce formulaire rapide. Notre laboratoire prépare votre dossier et vous contacte immédiatement sur WhatsApp pour coordonner le dépôt ou la prise en charge.
+              </p>
+<div class="space-y-4 font-body-sm text-body-sm text-forest-deep mb-8">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid shrink-0">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div>
+<strong class="block" data-ar="مقر المخبر" data-fr="Adresse du Laboratoire">Adresse du Laboratoire</strong>
+<a class="text-on-surface-variant underline decoration-botanical-mid/40 hover:text-botanical-mid" href="https://www.google.com/maps/search/?api=1&query=34.419243,8.792418" target="_blank" rel="noopener" data-ar="نهج ابن المقفّع، الدوالي، قفصة 2100، تونس" data-fr="Rue Ibn Moukafaa, Doualy, Gafsa 2100, Tunisie">Rue Ibn Moukafaa, Doualy, Gafsa 2100, Tunisie</a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid shrink-0">
+<span class="material-symbols-outlined text-[18px]">phone</span>
+</div>
+<div>
+<strong class="block" data-ar="الهاتف وواتساب المباشر" data-fr="Téléphone &amp; WhatsApp Direct">Téléphone &amp; WhatsApp Direct</strong>
+<span class="text-on-surface-variant font-bold" dir="ltr">+216 22 945 050</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-mint flex items-center justify-center text-botanical-mid shrink-0">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</div>
+<div>
+<strong class="block" data-ar="أوقات استقبال العينات" data-fr="Horaires de Réception">Horaires de Réception</strong>
+<span class="text-on-surface-variant" data-ar="الإثنين - الجمعة : 09:00 - 17:00&lt;br&gt;السبت : 09:00 - 12:00" data-fr="Lundi - Vendredi : 09h00 - 17h00&lt;br&gt;Samedi : 09h00 - 12h00">Lundi - Vendredi : 09h00 - 17h00<br/>Samedi : 09h00 - 12h00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Instant WhatsApp Assistant Chip -->
+<div class="p-4 rounded-2xl bg-surface-mint/80 border border-botanical-mid/20 flex items-center gap-3">
+<span class="w-3 h-3 rounded-full bg-lime-vibrant animate-ping shrink-0"></span>
+<span class="font-label-md text-label-md text-forest-deep" data-ar="رد سريع عبر واتساب" data-fr="Réponse rapide par WhatsApp">
+                Réponse rapide par WhatsApp
+              </span>
+</div>
+</div>
+<!-- Interactive Form Right -->
+<div class="lg:col-span-7">
+<form class="space-y-4" id="westlabForm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="الاسم واللقب / اسم الضيعة *" data-fr="Nom &amp; Prénom / Exploitation *" for="clientName">
+                    Nom &amp; Prénom / Exploitation *
+                  </label>
+<input class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="clientName" placeholder="Mohamed Ben Ali" data-ph-fr="Mohamed Ben Ali" data-ph-ar="محمد بن علي" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="رقم الهاتف / واتساب *" data-fr="Numéro Téléphone / WhatsApp *" for="clientPhone">
+                    Numéro Téléphone / WhatsApp *
+                  </label>
+<input class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="clientPhone" placeholder="+216 22 123 456" data-ph-fr="+216 22 123 456" data-ph-ar="+216 22 123 456" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="نوع التحليل المطلوب *" data-fr="Type d'Analyse Souhaité *" for="analysisType">
+                    Type d'Analyse Souhaité *
+                  </label>
+<select class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="analysisType">
+<option data-ar="تحليل تربة شامل" data-fr="Analyse de Sol Complète" value="Analyse de Sol Complète">Analyse de Sol Complète</option>
+<option data-ar="مياه الري (الملوحة والعناصر)" data-fr="Eau d'Irrigation (Salinité &amp; Minéraux)" value="Eau d'Irrigation (Salinité &amp; Minéraux)">Eau d'Irrigation (Salinité &amp; Minéraux)</option>
+<option data-ar="تحليل الأوراق والنبات" data-fr="Diagnostic Végétal &amp; Foliaire" value="Diagnostic Végétal &amp; Foliaire">Diagnostic Végétal &amp; Foliaire</option>
+<option data-ar="فحص الأسمدة والكمبوست" data-fr="Contrôle Fertilisant &amp; Compost" value="Contrôle Fertilisant &amp; Compost">Contrôle Fertilisant &amp; Compost</option>
+<option data-ar="باقة مدمجة (تربة + ماء)" data-fr="Pack Combiné Terre + Eau" value="Pack Combiné Terre + Eau">Pack Combiné Terre + Eau</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="المنطقة / المعتمدية" data-fr="Région / Délégation" for="clientRegion">
+                    Région / Délégation
+                  </label>
+<input class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="clientRegion" placeholder="Gafsa Sud, El Guettar, Sidi Bouzid..." data-ph-fr="Gafsa Sud, El Guettar, Sidi Bouzid..." data-ph-ar="قفصة الجنوبية، القطار، سيدي بوزيد..." type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="نوع الزراعة (زياتين، خضروات، نخيل، فستق...)" data-fr="Culture concernée (Olivier, Maraîchage, Dattes, etc.)" for="clientCulture">
+                  Culture concernée (Olivier, Maraîchage, Dattes, etc.)
+                </label>
+<input class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="clientCulture" placeholder="Ex: 500 Oliviers Picholine, problème de jaunissement" data-ph-fr="Ex: 500 Oliviers Picholine, problème de jaunissement" data-ph-ar="مثال: 500 شجرة زيتون من صنف بيشولين، مشكل اصفرار" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-forest-deep mb-1.5" data-ar="ملاحظات / المشكل الملاحظ" data-fr="Observations / Problème constaté" for="clientMessage">
+                  Observations / Problème constaté
+                </label>
+<textarea class="w-full bg-[#fbfcf9] border border-stroke-soft focus:border-stroke-focus focus:ring-2 focus:ring-stroke-focus/20 rounded-xl px-4 py-3 text-body-md text-ink-primary outline-none transition-all" id="clientMessage" placeholder="Décrivez le symptôme (baisse de rendement, eau salée, sol lourd)..." data-ph-fr="Décrivez le symptôme (baisse de rendement, eau salée, sol lourd)..." data-ph-ar="صف المشكل (تراجع المردودية، ماء مالح، تربة ثقيلة)..." rows="3"></textarea>
+</div>
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
+<button class="w-full sm:w-auto inline-flex items-center justify-center font-label-lg text-label-lg bg-lime-vibrant hover:bg-secondary-container text-ink-primary px-8 py-3.5 rounded-full font-bold shadow-[0_9px_22px_rgba(16,39,25,0.15)] hover:-translate-y-0.5 transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px] me-2">send</span>
+<span data-ar="إرسال الطلب مباشرة عبر واتساب" data-fr="Transmettre ma demande via WhatsApp">Transmettre ma demande via WhatsApp</span>
+</button>
+<span class="text-body-sm text-ink-muted text-center sm:text-right" data-ar="رد سريع عبر واتساب" data-fr="Réponse rapide par WhatsApp">
+                  Réponse rapide par WhatsApp
+                </span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Mobile Action Trigger Bar -->
+<div class="lg:hidden fixed bottom-3 left-3 right-3 z-40 bg-forest-darkest/95 backdrop-blur-md p-2 rounded-full border border-forest-surface shadow-2xl flex items-center justify-between gap-2">
+<a class="flex-1 bg-lime-vibrant text-forest-deep py-2.5 px-4 rounded-full font-label-lg text-label-lg font-bold text-center flex items-center justify-center gap-1" href="#demande-analyse">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+<span data-ar="اطلب تحليلاً" data-fr="Demander Analyse">Demander Analyse</span>
+</a>
+<a class="bg-forest-surface text-surface-bright p-2.5 rounded-full flex items-center justify-center" href="https://wa.me/21622945050" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-lime-vibrant">chat</span>
+</a>
+</div>
+</div>
+<!-- Inline JavaScript for Full FR/AR Bilingual Toggle & WhatsApp Automation -->
+<script>
+(function() {
+  const WHATSAPP_PHONE = "21622945050";
+  let activeLang = "fr";
+
+  function switchLanguage(lang) {
+    activeLang = lang;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+    
+    // Toggle active classes on Shell header buttons if present
+    document.querySelectorAll("header button").forEach(btn => {
+      if (btn.textContent.trim().toUpperCase() === lang.toUpperCase()) {
+        btn.classList.add("bg-lime-vibrant", "text-ink-primary", "font-bold");
+        btn.classList.remove("text-surface-bright");
+      } else if (btn.textContent.trim().toUpperCase() === "FR" || btn.textContent.trim().toUpperCase() === "AR") {
+        btn.classList.remove("bg-lime-vibrant", "text-ink-primary", "font-bold");
+        btn.classList.add("text-surface-bright");
+      }
+    });
+
+    // Replace all elements with bilingual datasets
+    document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+      const val = el.getAttribute("data-" + lang);
+      if (val) {
+        el.innerHTML = val;
+      }
+    });
+    document.querySelectorAll("[data-ph-" + lang + "]").forEach(el => {
+      el.setAttribute("placeholder", el.getAttribute("data-ph-" + lang));
+    });
+  }
+
+  // Hook Shell Language Buttons
+  document.querySelectorAll("header button").forEach(btn => {
+    btn.addEventListener("click", function() {
+      const txt = this.textContent.trim().toLowerCase();
+      if (txt === "ar" || txt === "العربية") {
+        switchLanguage("ar");
+      } else {
+        switchLanguage("fr");
+      }
+    });
+  });
+
+  // Handle WhatsApp Request Submission
+  const form = document.getElementById("westlabForm");
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById("clientName").value.trim();
+      const phone = document.getElementById("clientPhone").value.trim();
+      const typeSelect = document.getElementById("analysisType");
+      const type = typeSelect.options[typeSelect.selectedIndex].text;
+      const region = document.getElementById("clientRegion").value.trim() || (activeLang === "fr" ? "Non précisé" : "غير محدد");
+      const culture = document.getElementById("clientCulture").value.trim() || (activeLang === "fr" ? "Non spécifié" : "غير محدد");
+      const message = document.getElementById("clientMessage").value.trim() || (activeLang === "fr" ? "Aucune remarque" : "بدون ملاحظات");
+
+      let formattedMessage = "";
+      if (activeLang === "fr") {
+        formattedMessage = "*NOUVELLE DEMANDE D'ANALYSE - WESTLAB GAFSA*\n\n" +
+          "👤 *Client / Exploitation :* " + name + "\n" +
+          "📞 *Téléphone :* " + phone + "\n" +
+          "🧪 *Type d'analyse :* " + type + "\n" +
+          "📍 *Région :* " + region + "\n" +
+          "🌱 *Culture concernée :* " + culture + "\n" +
+          "📝 *Observations :* " + message + "\n\n" +
+          "Envoyé depuis le portail web WestLab.";
+      } else {
+        formattedMessage = "*طلب تحليل فلاحي جديد - WESTLAB قفصة*\n\n" +
+          "👤 *الحريف / الضيعة :* " + name + "\n" +
+          "📞 *رقم الهاتف :* " + phone + "\n" +
+          "🧪 *نوع التحليل :* " + type + "\n" +
+          "📍 *المنطقة :* " + region + "\n" +
+          "🌱 *نوع الزراعة :* " + culture + "\n" +
+          "📝 *الملاحظات :* " + message + "\n\n" +
+          "تم الإرسال عبر الموقع الإلكتروني لـ WestLab.";
+      }
+
+      const encodedUrl = "https://wa.me/" + WHATSAPP_PHONE + "?text=" + encodeURIComponent(formattedMessage);
+      window.open(encodedUrl, "_blank", "noopener,noreferrer");
+    });
+  }
+})();
+</script></main><footer class="w-full bg-forest-darkest text-surface-container-high py-space-xl mt-space-xl"><div class="max-w-[1160px] mx-auto px-margin-mobile md:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="space-y-space-md"><div class="flex items-center gap-2"><span class="font-headline-md text-headline-md text-surface-bright font-bold">WestLab</span><span class="px-2 py-0.5 bg-forest-surface text-lime-vibrant font-label-kicker text-[10px] rounded-full uppercase tracking-wider">Gafsa Hub</span></div><p class="font-body-sm text-body-sm text-surface-dim leading-relaxed" data-fr="Laboratoire d'analyses agronomiques de pointe dédié au diagnostic de sols, d'eaux d'irrigation et de tissus foliaires pour une agriculture durable et performante." data-ar="مخبر تحاليل فلاحية متطور مخصص لتشخيص التربة ومياه الري وأنسجة الأوراق من أجل فلاحة مستدامة ومردودة.">Laboratoire d'analyses agronomiques de pointe dédié au diagnostic de sols, d'eaux d'irrigation et de tissus foliaires pour une agriculture durable et performante.</p><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-lime-vibrant text-[20px]">location_on</span><span class="font-label-md text-label-md text-surface-container-lowest" data-fr="Gafsa, Tunisie" data-ar="قفصة، تونس">Gafsa, Tunisie</span></div></div><div><h3 class="font-headline-sm text-headline-sm text-surface-bright mb-space-md" data-fr="Analyses Spécialisées" data-ar="تحاليل متخصصة">Analyses Spécialisées</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-surface-dim"><li class="hover:text-lime-vibrant transition-colors"><a data-path="nos-analyses" href="#" data-fr="Physico-chimie des sols arables" data-ar="الخصائص الفيزيائية والكيميائية للتربة">Physico-chimie des sols arables</a></li><li class="hover:text-lime-vibrant transition-colors"><a data-path="nos-analyses" href="#" data-fr="Contrôle salinité et eaux de puits" data-ar="مراقبة الملوحة ومياه الآبار">Contrôle salinité et eaux de puits</a></li><li class="hover:text-lime-vibrant transition-colors"><a data-path="nos-analyses" href="#" data-fr="Diagnostics foliaires &amp; carences" data-ar="تشخيص الأوراق ونقص العناصر">Diagnostics foliaires &amp; carences</a></li><li class="hover:text-lime-vibrant transition-colors"><a data-path="nos-analyses" href="#" data-fr="Résidus organiques &amp; phytosanitaires" data-ar="المخلفات العضوية والمبيدات">Résidus organiques &amp; phytosanitaires</a></li><li class="hover:text-lime-vibrant transition-colors"><a data-path="nos-analyses" href="#" data-fr="Bilan complet fertilisation N-P-K" data-ar="حصيلة التسميد N-P-K الكاملة">Bilan complet fertilisation N-P-K</a></li></ul></div><div><h3 class="font-headline-sm text-headline-sm text-surface-bright mb-space-md" data-fr="Coordonnées Gafsa" data-ar="معطيات الاتصال - قفصة">Coordonnées Gafsa</h3><address class="not-italic space-y-space-xs font-body-sm text-body-sm text-surface-dim"><p class="flex items-start gap-2"><span class="material-symbols-outlined text-lime-vibrant text-[18px] shrink-0 mt-0.5">location_on</span><span><a href="https://www.google.com/maps/search/?api=1&query=34.419243,8.792418" target="_blank" rel="noopener" class="hover:text-lime-vibrant" data-fr="Rue Ibn Moukafaa, Doualy, Gafsa 2100, Tunisie" data-ar="نهج ابن المقفّع، الدوالي، قفصة 2100، تونس">Rue Ibn Moukafaa, Doualy, Gafsa 2100, Tunisie</a></span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-lime-vibrant text-[18px] shrink-0">call</span><span dir="ltr">+216 22 945 050</span></p><p class="flex items-center gap-2"><span class="material-symbols-outlined text-lime-vibrant text-[18px] shrink-0">schedule</span><span data-fr="Lun - Ven : 09h00 - 17h00&lt;br&gt;Sam : 09h00 - 12h00" data-ar="الإثنين - الجمعة : 09:00 - 17:00&lt;br&gt;السبت : 09:00 - 12:00">Lun - Ven : 09h00 - 17h00<br/>Sam : 09h00 - 12h00</span></p><p class="flex items-center gap-2"><svg class="w-[18px] h-[18px] shrink-0 text-lime-vibrant" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.1-2.3-.1-2.5 0-4.1 1.5-4.1 4.2v2.6H7.7v3.3h2.8V22h3Z"/></svg><a class="hover:text-lime-vibrant transition-colors" href="https://www.facebook.com/p/WEST-LAB-61557640843265/" target="_blank" rel="noopener" data-fr="Suivez-nous sur Facebook" data-ar="تابعنا على فيسبوك">Suivez-nous sur Facebook</a></p></address></div><div><h3 class="font-headline-sm text-headline-sm text-surface-bright mb-space-md" data-fr="Assistance &amp; Prélèvements" data-ar="المساعدة وأخذ العينات">Assistance &amp; Prélèvements</h3><p class="font-body-sm text-body-sm text-surface-dim mb-space-sm" data-fr="Besoin d'un kit de prélèvement d'échantillons ou d'une visite sur votre exploitation ?" data-ar="هل تحتاج إلى عدّة لأخذ العينات أو إلى زيارة لمستثمرتك؟">Besoin d'un kit de prélèvement d'échantillons ou d'une visite sur votre exploitation ?</p><a class="inline-flex items-center justify-center w-full font-label-lg text-label-lg bg-lime-vibrant hover:bg-secondary-container text-ink-primary hover:text-ink-primary py-space-sm px-space-md rounded-full font-bold transition-all" data-path="demande-analyse" href="#"><span class="material-symbols-outlined text-[18px] me-2">send</span><span data-fr="Planifier un prélèvement" data-ar="خطّط لأخذ العينات">Planifier un prélèvement</span></a></div></div><div class="pt-space-md border-t border-forest-surface flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-ink-muted"><div data-fr="© 2026 WestLab. Tous droits réservés." data-ar="© 2026 WestLab. جميع الحقوق محفوظة.">© 2026 WestLab. Tous droits réservés.</div><div class="flex items-center gap-space-md"><a class="hover:text-surface-bright transition-colors" data-path="mentions-legales" href="#" data-fr="Mentions Légales" data-ar="الإشعارات القانونية">Mentions Légales</a><a class="hover:text-surface-bright transition-colors" data-path="politique-confidentialite" href="#" data-fr="Politique de Confidentialité" data-ar="سياسة الخصوصية">Politique de Confidentialité</a><a class="hover:text-surface-bright transition-colors" data-path="conditions-generales" href="#" data-fr="CGV" data-ar="شروط البيع">CGV</a></div></div></div></footer><script>
+(function(){var m={"nos-analyses":"#services","notre-methode":"#methode","le-laboratoire":"#le-laboratoire","faq":"#faq","contact":"#demande-analyse","demande-analyse":"#demande-analyse"};
+document.querySelectorAll("[data-path]").forEach(function(a){var p=a.getAttribute("data-path");if(m[p]){a.setAttribute("href",m[p]);}});})();
+</script></body></html>
